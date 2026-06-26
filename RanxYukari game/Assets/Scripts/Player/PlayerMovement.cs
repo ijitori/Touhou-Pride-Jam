@@ -1,0 +1,124 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+using System.Collections;
+//Controlls how the player moves, by rat queen
+public class PlayerMovement : MonoBehaviour
+{
+    Renderer SpriteRenderer;
+
+    [SerializeField]
+    InputAction MovementInput;
+    [SerializeField]
+    InputAction FocusInput;
+    [SerializeField]
+    InputAction DashInput;
+
+    [SerializeField]
+    float UnfocusedMoveSpeed; // How fast the player pushes a object.
+    [SerializeField]
+    float focusedMoveSpeed;
+    [SerializeField]
+    float DashSpeed;
+    [SerializeField]
+
+    bool Dashing;
+    [SerializeField]
+    float DashCoolDown;
+    float DashCoolDownTimer;
+    float startTime;
+    [SerializeField]
+    float journeyTime;
+    Vector3 DashTargetPos;
+    Vector3 DashStartPos;
+    
+    [SerializeField]
+    Vector2 MoveDir; //Where the player inputs are "pushing" the objcet
+    Vector3 TargetPos; //Where the object is going.
+
+    public bool IsFocused;
+    bool CollidingWithBordar;
+
+    private void OnDisable()
+    {
+        MovementInput.Disable();
+        FocusInput.Disable();
+        DashInput.Disable();
+    }
+    private void OnEnable() //These are for the input to not break!
+    {
+        MovementInput.Enable();
+        FocusInput.Enable();
+        DashInput.Enable();
+        DashInput.performed += Dash;
+    } 
+    void Start()
+    {
+        SpriteRenderer = this.GetComponent<Renderer>();
+    }
+
+    
+    void FixedUpdate()
+    {
+        MoveDir = MovementInput.ReadValue<Vector2>();
+        var FocusInputs = (FocusInput.ReadValue<float>());
+        var MoveSpeed = UnfocusedMoveSpeed;
+        
+        if(Dashing) //Dashing
+        {
+            
+            float Count = (startTime += Time.deltaTime) / journeyTime;
+            transform.position = Vector3.Lerp(DashStartPos, DashTargetPos, Count);
+            if(transform.position == DashTargetPos)
+            {
+                SpriteRenderer.material.color = Color.white;
+                MovementInput.Enable(); //If this line is removed then normal inputs wont work after dashing !!!!!
+                Dashing = false;
+            }
+        } 
+
+        if(DashCoolDownTimer >= 0)
+        {
+            DashCoolDownTimer -= Time.deltaTime;
+        } //Dashing cooldown
+
+        if (FocusInput.triggered)
+        {
+            IsFocused = true;
+            MoveSpeed = focusedMoveSpeed; 
+        } else 
+        { 
+            IsFocused = false;
+        }
+
+
+        if(MoveDir != Vector2.zero)
+        {
+            TargetPos += new Vector3(MoveDir.x * MoveSpeed, MoveDir.y * MoveSpeed, 0); 
+            var NewPos = new Vector3(MoveDir.x * MoveSpeed, MoveDir.y * MoveSpeed, 0);  
+            transform.position += NewPos;
+        } else
+        {
+            TargetPos = transform.position; //Rest Target Pos after we stop moving.
+        }
+
+    }
+
+    void Dash(InputAction.CallbackContext context) //Starts the dashing process and disables movement inputs
+    {
+        if(DashCoolDownTimer <= 0)
+        {
+            DashStartPos = this.transform.position;
+            DashTargetPos = new Vector3(transform.position.x + (MoveDir.x * DashSpeed), transform.position.y + (MoveDir.y * DashSpeed), 0); 
+
+            Debug.Log("I dashed!");
+            DashCoolDownTimer = DashCoolDown;
+            startTime = 0;
+            SpriteRenderer.material.color = Color.blue;
+            Dashing = true;
+            Debug.Log(DashTargetPos + "" + DashStartPos);
+            MovementInput.Disable(); 
+        }
+    }
+}
+
+    
