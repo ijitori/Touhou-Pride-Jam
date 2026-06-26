@@ -45,5 +45,6 @@ public class SimpleBulletMovement : MonoBehaviour
     void HitObject(GameObject collision)
     {
         collision.GetComponent<EnemyBase>().Hit(1);
+        Object.Destroy(this.gameObject);
     }
 }

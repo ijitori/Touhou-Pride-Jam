@@ -22,6 +22,7 @@ public class EnemyBase : MonoBehaviour
         if(EnemyHp<=0)
         {
             Object.Destroy(this.gameObject);
+            GameMasterObject.GetComponent<Wavespawner>().EnemyDeath(this.gameObject);
         }
     }
 }

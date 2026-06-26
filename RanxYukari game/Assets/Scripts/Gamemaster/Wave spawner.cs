@@ -19,6 +19,9 @@ public class Wavespawner : MonoBehaviour
 
     public void StartWave()
     {
+        //Dialog and boss checking will go here when its added
+
+        //Spawn enemys
         WaveNumber += 1;
         Points = (PointsIncressEveryWave * WaveNumber);
 
@@ -27,10 +30,34 @@ public class Wavespawner : MonoBehaviour
         while(Points >= 0)
         {
             Points -= UsableEnemysList[randEnemyId].PointsCost;
-            var Enemy = Instantiate(UsableEnemysList[randEnemyId].EnemyObject, Vector3.zero, Quaternion.identity);
+            var Enemy = Instantiate(UsableEnemysList[randEnemyId].EnemyObject, GetSpawnPoint(), Quaternion.identity);
 
             var EnemyBase = Enemy.GetComponent<EnemyBase>();
             EnemyBase.GameMasterObject = this.gameObject;
+
+            EnemysSpawned.Add(Enemy);
+        }
+    }
+
+    public Vector3 GetSpawnPoint()
+    {
+        int randX = Random.Range(-25, 25);
+        int randY = Random.Range(-25, 25);
+
+        Vector3 spawnPoint = new Vector3(randX, randY, 0.0f);
+        
+
+        return spawnPoint;
+
+    }
+
+    public void EnemyDeath(GameObject DyingEnemy)
+    {
+        EnemysSpawned.Remove(DyingEnemy);
+
+        if(EnemysSpawned.Count==0)
+        {
+            StartWave();
         }
     }
 }
