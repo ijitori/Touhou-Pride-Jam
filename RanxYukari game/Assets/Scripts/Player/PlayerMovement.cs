@@ -7,11 +7,11 @@ public class PlayerMovement : MonoBehaviour
     Renderer SpriteRenderer;
 
     [SerializeField]
-    InputAction MovementInput;
+    public InputAction MovementInput;
     [SerializeField]
-    InputAction FocusInput;
+    public InputAction FocusInput;
     [SerializeField]
-    InputAction DashInput;
+    public InputAction DashInput;
 
     [SerializeField]
     float UnfocusedMoveSpeed; // How fast the player pushes a object.

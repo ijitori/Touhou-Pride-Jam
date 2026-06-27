@@ -4,10 +4,10 @@ using UnityEngine.InputSystem;
 public class PlayerAttacking : MonoBehaviour
 {
     [SerializeField]
-    InputAction AttackInput;
+    public InputAction AttackInput;
     [SerializeField]
     GameObject BulletToFire;
-    bool AutoFire;
+    public bool AutoFire;
     [SerializeField] float FireCoolDown;
     float FireTimer;
     Camera Maincamera; //We need the main camera to find where the mouse pos is.

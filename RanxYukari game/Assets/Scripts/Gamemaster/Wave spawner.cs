@@ -12,8 +12,12 @@ public class Wavespawner : MonoBehaviour
     int PointsIncressEveryWave;
     [SerializeField] List<EnemyStruct> UsableEnemysList; //Spawnable enemys the game can use.
     [SerializeField] List<GameObject> EnemysSpawned; // Enemys on the field.
+    [SerializeField] List<WaveDialog> WaveDialogList; // When and what dialogs start.
+    DialogMaster DialogMaster;
     void Start()
     {
+        WaveNumber += 1;
+        DialogMaster = this.GetComponent<DialogMaster>();
         StartWave();
     }
 
@@ -22,21 +26,34 @@ public class Wavespawner : MonoBehaviour
         //Dialog and boss checking will go here when its added
 
         //Spawn enemys
-        WaveNumber += 1;
-        Points = (PointsIncressEveryWave * WaveNumber);
-
-        int randEnemyId = Random.Range(0, UsableEnemysList.Count - 1);
-
-        while(Points >= 0)
+        if(WaveDialogList.Count != 0)
         {
-            Points -= UsableEnemysList[randEnemyId].PointsCost;
-            var Enemy = Instantiate(UsableEnemysList[randEnemyId].EnemyObject, GetSpawnPoint(), Quaternion.identity);
+            if(WaveDialogList[0].WaveStartOn == WaveNumber)
+            {
 
-            var EnemyBase = Enemy.GetComponent<EnemyBase>();
-            EnemyBase.GameMasterObject = this.gameObject;
-
-            EnemysSpawned.Add(Enemy);
+                DialogMaster.CurrentDialogTree = WaveDialogList[0].WaveDialogTree;
+                WaveDialogList.Remove(WaveDialogList[0]);
+                DialogMaster.StartDialog();
+                return;
+            }
         }
+            
+            
+            Points = (PointsIncressEveryWave * WaveNumber);
+
+            int randEnemyId = Random.Range(0, UsableEnemysList.Count - 1);
+
+            while(Points >= 0)
+            {
+                Points -= UsableEnemysList[randEnemyId].PointsCost;
+                var Enemy = Instantiate(UsableEnemysList[randEnemyId].EnemyObject, GetSpawnPoint(), Quaternion.identity);
+
+                var EnemyBase = Enemy.GetComponent<EnemyBase>();
+                EnemyBase.GameMasterObject = this.gameObject;
+
+                EnemysSpawned.Add(Enemy);
+            } 
+        
     }
 
     public Vector3 GetSpawnPoint()
@@ -57,6 +74,7 @@ public class Wavespawner : MonoBehaviour
 
         if(EnemysSpawned.Count==0)
         {
+            WaveNumber += 1;
             StartWave();
         }
     }
@@ -66,4 +84,10 @@ public struct EnemyStruct
 {
     public int PointsCost;
     public GameObject EnemyObject;
+}
+[System.Serializable]
+public struct WaveDialog
+{
+    public DialogTree WaveDialogTree;
+    public int WaveStartOn;
 }
