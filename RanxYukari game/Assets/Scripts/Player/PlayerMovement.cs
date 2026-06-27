@@ -5,6 +5,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
     Renderer SpriteRenderer;
+    PlayerBase PlayerBase;
 
     [SerializeField]
     public InputAction MovementInput;
@@ -38,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
     public bool IsFocused;
     bool CollidingWithBordar;
 
+    GameObject DashAfterImage;
+
     private void OnDisable()
     {
         MovementInput.Disable();
@@ -54,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         SpriteRenderer = this.GetComponent<Renderer>();
+        PlayerBase = this.GetComponent<PlayerBase>();
     }
 
     
@@ -72,7 +76,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 SpriteRenderer.material.color = Color.white;
                 MovementInput.Enable(); //If this line is removed then normal inputs wont work after dashing !!!!!
+                Destroy(DashAfterImage);
                 Dashing = false;
+                PlayerBase.Immortal = false;
             }
         } 
 
@@ -107,15 +113,18 @@ public class PlayerMovement : MonoBehaviour
     {
         if(DashCoolDownTimer <= 0)
         {
+            DashAfterImage = Instantiate(Resources.Load<GameObject>("Particals/after images") as GameObject, transform.position, Quaternion.identity);
+            DashAfterImage.transform.SetParent(this.transform);
             DashStartPos = this.transform.position;
             DashTargetPos = new Vector3(transform.position.x + (MoveDir.x * DashSpeed), transform.position.y + (MoveDir.y * DashSpeed), 0); 
 
-            Debug.Log("I dashed!");
+            
             DashCoolDownTimer = DashCoolDown;
             startTime = 0;
             SpriteRenderer.material.color = Color.blue;
             Dashing = true;
-            Debug.Log(DashTargetPos + "" + DashStartPos);
+            PlayerBase.Immortal = true;
+            
             MovementInput.Disable(); 
         }
     }

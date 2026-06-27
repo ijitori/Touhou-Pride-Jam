@@ -9,6 +9,7 @@ public class SimpleBulletMovement : MonoBehaviour
     Vector3 LastFramePos;
     float DistanceTravled;
     float TimeAlive;
+    [SerializeField] bool EnemyBullet;
     void Start()
     {
         TrajectoryStart = this.transform.position;
@@ -31,6 +32,7 @@ public class SimpleBulletMovement : MonoBehaviour
         {
             if(hit)
             {
+                Debug.Log("whawh");
                 HitObject(hit.transform.gameObject);   
             }
         }
@@ -44,7 +46,18 @@ public class SimpleBulletMovement : MonoBehaviour
 
     void HitObject(GameObject collision)
     {
-        collision.GetComponent<EnemyBase>().Hit(1);
-        Object.Destroy(this.gameObject);
+        if(EnemyBullet)
+        {
+            var PlayerBase = collision.GetComponent<PlayerBase>();
+            if(PlayerBase.Immortal != true)
+            {
+                collision.GetComponent<PlayerBase>().Hit(1);
+                Object.Destroy(this.gameObject);      
+            }
+        } else
+        {
+            collision.GetComponent<EnemyBase>().Hit(1);
+            Object.Destroy(this.gameObject);   
+        }
     }
 }

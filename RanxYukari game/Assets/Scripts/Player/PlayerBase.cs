@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class PlayerBase : MonoBehaviour
 {
     public int HP;
+    public bool Immortal;
     [SerializeField]
     int MaxHP;
     public UnityEvent<string> DeathEventCall; //Called Whenever the player dies to clean up everything 
@@ -21,6 +22,12 @@ public class PlayerBase : MonoBehaviour
 
     void Update()
     {
+    
+    }
+
+    public void Hit(int damage)
+    {
+        HP -= damage;
         if(HP == 0)
         {
             DeathEventCall.Invoke("Death"); //Calls the death event in all functions

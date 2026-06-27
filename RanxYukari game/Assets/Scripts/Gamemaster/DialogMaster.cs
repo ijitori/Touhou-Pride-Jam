@@ -71,9 +71,9 @@ public class DialogMaster : MonoBehaviour
         }
         else
         {
-                PortaritLeft.color = new Color(0.4f, 0.4f, 0.4f);
-                PortaritRight.color = new Color(1f, 1f, 1f);
-                ContentText.text += "<align=right>";
+            PortaritLeft.color = new Color(0.4f, 0.4f, 0.4f);
+            PortaritRight.color = new Color(1f, 1f, 1f);
+            ContentText.text += "<align=right>";
         }
 
         ContentText.text = ""; //Rest text
@@ -125,7 +125,7 @@ public class DialogMaster : MonoBehaviour
             //    TextBody.text = Talker[Whatbox].WhatIHaveToSay;
             //    i = WhatSay.Length;
             //}
-            yield return null;
+            yield return  new WaitForSeconds(0.03f);
         }
         yield return null;
     }
