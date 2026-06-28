@@ -51,7 +51,7 @@ public class SimpleBulletMovement : MonoBehaviour
             var PlayerBase = collision.GetComponent<PlayerBase>();
             if(PlayerBase.Immortal != true)
             {
-                collision.GetComponent<PlayerBase>().Hit(1);
+                PlayerBase.Hit(1);
                 Object.Destroy(this.gameObject);      
             }
         } else

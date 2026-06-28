@@ -1,5 +1,5 @@
 using UnityEngine;
-//Lets out a bullet directed at the player
+//Lets out a bullet directed at the player. Code by rat queen
 public class EnemySentryAttack : MonoBehaviour
 {
     GameObject Player;

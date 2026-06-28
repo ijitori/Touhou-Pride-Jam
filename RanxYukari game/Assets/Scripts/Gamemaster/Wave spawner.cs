@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-//Spawns enemys via waves
+//Spawns enemys via waves. Code by rat queen
 public class Wavespawner : MonoBehaviour
 {
     [SerializeField]
@@ -13,6 +13,7 @@ public class Wavespawner : MonoBehaviour
     [SerializeField] List<EnemyStruct> UsableEnemysList; //Spawnable enemys the game can use.
     [SerializeField] List<GameObject> EnemysSpawned; // Enemys on the field.
     [SerializeField] List<WaveDialog> WaveDialogList; // When and what dialogs start.
+    [SerializeField] List<Wavemodifier> WaveModifierList; // When and what dialogs start.
     DialogMaster DialogMaster;
     void Start()
     {
@@ -38,13 +39,26 @@ public class Wavespawner : MonoBehaviour
             }
         }
             
-            
+        if(WaveModifierList.Count != 0)
+        {
+            if(WaveModifierList[0].WaveStartOn == WaveNumber)
+            {
+                if(WaveModifierList[0].IsBossWave)
+                {
+                    var Boss = Instantiate(WaveModifierList[0].BossToSpawn, Vector3.zero, Quaternion.identity);
+                    WaveModifierList.Remove(WaveModifierList[0]);
+                    return;
+                }
+            }
+        }
+
             Points = (PointsIncressEveryWave * WaveNumber);
 
-            int randEnemyId = Random.Range(0, UsableEnemysList.Count - 1);
+            
 
             while(Points >= 0)
             {
+                int randEnemyId = Random.Range(0, UsableEnemysList.Count );
                 Points -= UsableEnemysList[randEnemyId].PointsCost;
                 var Enemy = Instantiate(UsableEnemysList[randEnemyId].EnemyObject, GetSpawnPoint(), Quaternion.identity);
 
@@ -90,4 +104,12 @@ public struct WaveDialog
 {
     public DialogTree WaveDialogTree;
     public int WaveStartOn;
+}
+
+[System.Serializable]
+public struct Wavemodifier
+{
+    public int WaveStartOn;
+    public bool IsBossWave;
+    public GameObject BossToSpawn;
 }
