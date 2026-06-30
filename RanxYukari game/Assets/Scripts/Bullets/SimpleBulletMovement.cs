@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class SimpleBulletMovement : MonoBehaviour
+public class SimpleBulletMovement : MonoBehaviour, BulletInterface
 {
-    public float Velocity = 100;
+    public float Velocity { get; set; } = 100;
     [SerializeField]
     float MaxDistance;
     Vector3 TrajectoryStart;
     Vector3 LastFramePos;
     float DistanceTravled;
     float TimeAlive;
-    [SerializeField] bool EnemyBullet;
+    public bool EnemyBullet { get; set; }
     void Start()
     {
         TrajectoryStart = this.transform.position;
@@ -44,6 +44,11 @@ public class SimpleBulletMovement : MonoBehaviour
         }
     }
 
+    public void BulletClear(string Massage)
+    {
+        Destroy(this.gameObject); 
+    }
+
     void HitObject(GameObject collision)
     {
         if(EnemyBullet)
@@ -56,7 +61,7 @@ public class SimpleBulletMovement : MonoBehaviour
             }
         } else
         {
-            collision.GetComponent<EnemyBase>().Hit(1);
+            collision.GetComponent<EnemyHitInterface>().Hit(1);
             Object.Destroy(this.gameObject);   
         }
     }

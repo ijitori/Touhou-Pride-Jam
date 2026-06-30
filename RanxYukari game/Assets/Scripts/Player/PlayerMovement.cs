@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         
         if(Dashing) //Dashing
         {
-            Debug.Log(DashAfterImage);
+            
             float Count = (startTime += Time.deltaTime) / journeyTime;
             transform.position = Vector3.Lerp(DashStartPos, DashTargetPos, Count);
             if(transform.position == DashTargetPos)

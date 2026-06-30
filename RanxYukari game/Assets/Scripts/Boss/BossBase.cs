@@ -1,0 +1,76 @@
+using UnityEngine;
+using UnityEngine.Events;
+using System.Collections;
+using System.Collections.Generic;
+using System;
+// Similar To EnemyBase, but has a spellcard system simialr to the games. By rat queen
+public class BossBase : MonoBehaviour, EnemyHitInterface
+{
+    GameObject Player;
+    public int EnemyHp;
+    [SerializeField] List<BossAttackMetaData> SpellCardList;
+    public GameObject GameMasterObject;
+    [SerializeField] MonoBehaviour CurrentAttack;
+    public UnityEvent<string> SpellcardChangeCall;
+    void Start()
+    {
+        if (SpellcardChangeCall == null)
+        {
+            SpellcardChangeCall = new UnityEvent<string>();
+        }
+       // SpellcardChangeCall.AddListener(Die);
+
+        Player = GameObject.FindGameObjectWithTag("Player");
+        Player.GetComponent<PlayerBase>().DeathEventCall.AddListener(OnPlayerDeath);
+
+        this.transform.position = Vector3.zero;
+        
+        
+    }
+
+    void OnPlayerDeath(string Massage)
+    {
+        Destroy(this.gameObject); 
+    }
+
+    void ChangeAttack()
+    {
+        Debug.Log(SpellCardList.Count);
+        if(SpellCardList.Count != 0)
+        {
+            Destroy(CurrentAttack); //Remove the old attack
+            SpellCardList.Remove(SpellCardList[0]);
+            Debug.Log("ewa");
+            Debug.Log(SpellCardList.Count);
+            SpellCardList[0].SpellCardMonoBehaivor.enabled = true;
+            EnemyHp = SpellCardList[0].SpellcardHealth;
+            CurrentAttack = SpellCardList[0].SpellCardMonoBehaivor;
+
+            SpellcardChangeCall.Invoke("Clear Bullets");
+            //BossAttackInterface NewAttack = (BossAttackInterface)this.gameObject.AddComponent(SpellCardList[0].SpellCardMonoBehaivor);
+            
+        } else
+        {
+            //Call boss end stuff here once you (rat queen) program it
+        }
+    }
+    
+    public void Hit(int Damage)
+    {
+        EnemyHp -= Damage;
+
+        if(EnemyHp<=0)
+        {
+            ChangeAttack();
+        }
+    }
+}
+
+[System.Serializable]
+public struct BossAttackMetaData
+{
+    public bool IsSpellCard;
+    public bool IsTimeOut;
+    public int SpellcardHealth;
+    public MonoBehaviour SpellCardMonoBehaivor;
+}

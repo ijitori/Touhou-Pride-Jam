@@ -1,6 +1,6 @@
 using UnityEngine;
-//Base of the enemy.
-public class EnemyBase : MonoBehaviour
+//Base of the enemy. By rat queen
+public class EnemyBase : MonoBehaviour, EnemyHitInterface
 {
     GameObject Player;
     public int EnemyHp;
@@ -9,12 +9,6 @@ public class EnemyBase : MonoBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         Player.GetComponent<PlayerBase>().DeathEventCall.AddListener(OnPlayerDeath);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void OnPlayerDeath(string Massage)

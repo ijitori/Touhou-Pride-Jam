@@ -477,12 +477,22 @@ MonoBehaviour:
   Points: 0
   PointsIncressEveryWave: 10
   UsableEnemysList:
-  - PointsCost: 10
+  - PointsCost: 5
     EnemyObject: {fileID: 8782380188397274460, guid: e3075728b91505e47916cfb07efefab9, type: 3}
+  - PointsCost: 10
+    EnemyObject: {fileID: 8782380188397274460, guid: bea58ca7eb6212740ab7cb4fdeb1c1d1, type: 3}
+  - PointsCost: 20
+    EnemyObject: {fileID: 8782380188397274460, guid: 74f68698f1b196343ab568db56b61412, type: 3}
+  - PointsCost: 5
+    EnemyObject: {fileID: 8782380188397274460, guid: b048364bccfdc4544bac50ea76d51f4a, type: 3}
   EnemysSpawned: []
   WaveDialogList:
   - WaveDialogTree: {fileID: 11400000, guid: f5f67cab21c237445bdb52def5379217, type: 2}
-    WaveStartOn: 2
+    WaveStartOn: 5
+  WaveModifierList:
+  - WaveStartOn: 1
+    IsBossWave: 1
+    BossToSpawn: {fileID: 3670078799847007404, guid: b903f45fe7fd5184caeed1bb0ff735e9, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +687,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -697,6 +707,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1383899939
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383899927}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1663943859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,6 +1164,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 356348663587899863, guid: 4aebf251ac2eebe4eb7fc5322cebdca9, type: 3}
+      propertyPath: MaxHP
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 1089572990157151273, guid: 4aebf251ac2eebe4eb7fc5322cebdca9, type: 3}
       propertyPath: UnfocusedMoveSpeed
       value: 0.29
@@ -1177,11 +1218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8336044362969900157, guid: 4aebf251ac2eebe4eb7fc5322cebdca9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.23
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 8336044362969900157, guid: 4aebf251ac2eebe4eb7fc5322cebdca9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.38
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8336044362969900157, guid: 4aebf251ac2eebe4eb7fc5322cebdca9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1222,6 +1263,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5564702518803858615, guid: 4aebf251ac2eebe4eb7fc5322cebdca9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1383899933}
+    - targetCorrespondingSourceObject: {fileID: 5564702518803858615, guid: 4aebf251ac2eebe4eb7fc5322cebdca9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1383899939}
   m_SourcePrefab: {fileID: 100100000, guid: 4aebf251ac2eebe4eb7fc5322cebdca9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
