@@ -21,7 +21,6 @@ public class YukariAttackStream : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(InternalTimer);
         if(InternalTimer<=0)
         {
             
@@ -82,10 +81,11 @@ public class YukariAttackStream : MonoBehaviour
     void MoveAttack()
     {
         transform.position = Random.insideUnitCircle * 5;
+        var RanFloat = Random.Range(-50.0f, 50.0f); //Ran! like the player!
 
         for(int i = 0; i <= 8; i++)
         {
-            var SlowBullet = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 0f + (i * (80))));
+            var SlowBullet = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, RanFloat + (i * (80))));
             SlowBullet.GetComponent<BulletInterface>().Velocity = 5;
             SlowBullet.GetComponent<BulletInterface>().EnemyBullet = true;
 

@@ -38,10 +38,10 @@ public class BossBase : MonoBehaviour, EnemyHitInterface
         Debug.Log(SpellCardList.Count);
         if(SpellCardList.Count != 0)
         {
-            Destroy(CurrentAttack); //Remove the old attack
             SpellCardList.Remove(SpellCardList[0]);
-            Debug.Log("ewa");
-            Debug.Log(SpellCardList.Count);
+            Destroy(CurrentAttack); //Remove the old attack
+            
+            
             SpellCardList[0].SpellCardMonoBehaivor.enabled = true;
             EnemyHp = SpellCardList[0].SpellcardHealth;
             CurrentAttack = SpellCardList[0].SpellCardMonoBehaivor;

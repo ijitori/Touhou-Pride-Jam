@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: -3288046926239224353}
   - component: {fileID: -7041587974441774855}
   - component: {fileID: 7933926919751278796}
+  - component: {fileID: 7940045251522776338}
+  - component: {fileID: -8082098482419755934}
+  - component: {fileID: -5095531245521786396}
   - component: {fileID: -2631978921969366673}
   - component: {fileID: -7103278502520454701}
   m_Layer: 6
@@ -108,16 +111,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7fd1115fcb516c42a1e384bc5dba427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossBase
-  EnemyHp: 500
+  EnemyHp: 200
   SpellCardList:
   - IsSpellCard: 0
     IsTimeOut: 0
-    SpellcardHealth: 1
+    SpellcardHealth: 200
     SpellCardMonoBehaivor: {fileID: -7041587974441774855}
   - IsSpellCard: 0
     IsTimeOut: 0
-    SpellcardHealth: 300
+    SpellcardHealth: 200
     SpellCardMonoBehaivor: {fileID: 7933926919751278796}
+  - IsSpellCard: 1
+    IsTimeOut: 0
+    SpellcardHealth: 500
+    SpellCardMonoBehaivor: {fileID: 7940045251522776338}
+  - IsSpellCard: 1
+    IsTimeOut: 0
+    SpellcardHealth: 500
+    SpellCardMonoBehaivor: {fileID: -8082098482419755934}
+  - IsSpellCard: 0
+    IsTimeOut: 0
+    SpellcardHealth: 200
+    SpellCardMonoBehaivor: {fileID: -5095531245521786396}
   GameMasterObject: {fileID: 0}
   CurrentAttack: {fileID: -7041587974441774855}
   SpellcardChangeCall:
@@ -154,6 +169,180 @@ MonoBehaviour:
   BulletToFire: {fileID: 0}
   AttackCoolDown: 0.21
   MoveCoolDown: 3.28
+--- !u!114 &7940045251522776338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670078799847007404}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c66994dddfcc194db1ea3be31a5f150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YukariSpellcardLineAttack
+  BulletToFire: {fileID: 0}
+  CurveX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: -52
+      inSlope: 34.718
+      outSlope: 34.718
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3
+      value: 52.154
+      inSlope: 34.718
+      outSlope: 34.718
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  CurveY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: -29
+      inSlope: 19.333334
+      outSlope: 19.333334
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3
+      value: 29
+      inSlope: 19.333334
+      outSlope: 19.333334
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  AttackCoolDown: 0.17
+  ShiftTime: 3
+  IsXBool: 0
+  PillarBulletSpeed: 50
+  PauseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-8082098482419755934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670078799847007404}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8b2d7d07c2f75438acb7b1683c73a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YukariSpellcardBorderBetweenConfinementAndFreedom
+  BulletToFire: {fileID: 0}
+  WallObject: {fileID: 0}
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 3
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  CirlceCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 360
+      outSlope: 360
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 360
+      inSlope: 360
+      outSlope: 360
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  AttackCoolDown: 0.03
+--- !u!114 &-5095531245521786396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670078799847007404}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8df3d1bbfc204418d36516ddb996cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YukariAttackTrain
+  BulletToFire: {fileID: 0}
+  TrainObject: {fileID: 0}
+  TrainWarning: {fileID: 0}
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: -180
+      inSlope: 300
+      outSlope: 300
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3
+      value: -90
+      inSlope: 300
+      outSlope: 300
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  AttackCoolDown: 0.05
+  TrainCoolDown: 1.84
+  BulletSpeed: 20
+  TrainWarningSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
 --- !u!50 &-2631978921969366673
 Rigidbody2D:
   serializedVersion: 5

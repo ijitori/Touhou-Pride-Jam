@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class SimpleBulletMovement : MonoBehaviour, BulletInterface
+public class TrainMovement : MonoBehaviour, BulletInterface
 {
-    public float Velocity { get; set; } = 100;
+   public float Velocity { get; set; } = 100;
     [SerializeField]
     float MaxDistance;
     Vector3 TrajectoryStart;
@@ -10,7 +10,6 @@ public class SimpleBulletMovement : MonoBehaviour, BulletInterface
     float DistanceTravled;
     float TimeAlive;
     public bool EnemyBullet { get; set; }
-    public bool HasBeenTrained;
     bool IsPaused;
     Renderer Renderer;
     Color ColorSave;
@@ -78,35 +77,33 @@ public class SimpleBulletMovement : MonoBehaviour, BulletInterface
         }
     }
 
-    public void HitByTrain(float NewVelocity)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        DistanceTravled = 0;
-        Velocity = NewVelocity;
-        var ReltivePos = (this.transform.position - Player.transform.position);
-        float rotR_z = Mathf.Atan2(ReltivePos.y, ReltivePos.x) * Mathf.Rad2Deg;
-            
-        this.transform.rotation = Quaternion.Euler(0f, 0f, rotR_z + 90);
+        Debug.Log(col.gameObject);
+        HitObject(col.gameObject);
     }
-
-
 
     void HitObject(GameObject collision)
     {
-        if(EnemyBullet)
+        
+        var PlayerBase = collision.GetComponent<PlayerBase>();
+        var SimpleBulletMovement = collision.GetComponent<SimpleBulletMovement>();
+        if(PlayerBase)
         {
-            var PlayerBase = collision.GetComponent<PlayerBase>();
-            if(PlayerBase)
-            {
             if(PlayerBase.Immortal != true)
             {
                 PlayerBase.Hit(1);
-                Object.Destroy(this.gameObject);      
+                //Object.Destroy(this.gameObject);      
             }
-            }
-        } else
+        }
+            
+        if(SimpleBulletMovement)
         {
-            collision.GetComponent<EnemyHitInterface>().Hit(1);
-            Object.Destroy(this.gameObject);   
+            if(SimpleBulletMovement.HasBeenTrained!=true)
+            {
+                SimpleBulletMovement.HasBeenTrained = true;
+                SimpleBulletMovement.HitByTrain(60);
+            }
         }
     }
 }

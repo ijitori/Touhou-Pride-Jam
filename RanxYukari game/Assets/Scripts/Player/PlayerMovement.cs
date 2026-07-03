@@ -96,8 +96,19 @@ public class PlayerMovement : MonoBehaviour
             IsFocused = false;
         }
 
+        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, MoveDir, MoveSpeed, this.GetComponent<Collider2D>().contactCaptureLayers);
+        Debug.DrawRay(transform.position, MoveDir, Color.red, MoveSpeed);
+        var stop = false;
+        foreach (RaycastHit2D hit in hits)
+            {
+                if(hit)
+                {
+                
+                    stop = true;   
+                }
+            }
 
-        if(MoveDir != Vector2.zero)
+        if(MoveDir != Vector2.zero && stop!=true)
         {
             TargetPos += new Vector3(MoveDir.x * MoveSpeed, MoveDir.y * MoveSpeed, 0); 
             var NewPos = new Vector3(MoveDir.x * MoveSpeed, MoveDir.y * MoveSpeed, 0);  
@@ -117,6 +128,17 @@ public class PlayerMovement : MonoBehaviour
             DashAfterImage.transform.SetParent(this.transform);
             DashStartPos = this.transform.position;
             DashTargetPos = new Vector3(transform.position.x + (MoveDir.x * DashSpeed), transform.position.y + (MoveDir.y * DashSpeed), 0); 
+
+            RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, MoveDir, DashSpeed, this.GetComponent<Collider2D>().contactCaptureLayers);
+            Debug.DrawRay(transform.position, DashTargetPos, Color.red, 10.0f);
+            foreach (RaycastHit2D hit in hits)
+            {
+                if(hit)
+                {
+                
+                    DashTargetPos = hit.point;   
+                }
+            }
 
             
             DashCoolDownTimer = DashCoolDown;

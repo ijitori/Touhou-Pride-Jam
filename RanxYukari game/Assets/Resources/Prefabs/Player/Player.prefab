@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBase
   HP: 0
+  Immortal: 0
   MaxHP: 5
   DeathEventCall:
     m_PersistentCalls:
@@ -226,4 +227,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02059f768e9e0ec459ae258c76d0763f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttacking
+  AttackInput:
+    m_Name: Attack Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: b837ab1a-c69e-4528-9e0e-40849c1c150f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   BulletToFire: {fileID: 0}
+  AutoFire: 0
+  FireCoolDown: 0
