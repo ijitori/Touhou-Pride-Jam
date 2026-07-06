@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 68ff629dd2d37b04cbfd63687ccf29cc
+guid: b9b8a13984c7591409d236163a259cdd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7953767465850684005
-    second: Th06Rumia_0
+      213: 667967085240655388
+    second: Background_Main_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Th06Rumia_0
+      name: Background_Main_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 247
+        width: 2048
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 562c61c8e55716e60800000000000000
-      internalID: 7953767465850684005
+      spriteID: c1e1c656688154900800000000000000
+      internalID: 667967085240655388
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Th06Rumia_0: 7953767465850684005
+      Background_Main_0: 667967085240655388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
