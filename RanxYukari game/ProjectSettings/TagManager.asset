@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - BossHP
+  - Background
   layers:
   - Default
   - TransparentFX
