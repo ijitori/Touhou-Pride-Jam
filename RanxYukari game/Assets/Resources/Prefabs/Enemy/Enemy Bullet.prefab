@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e62037421e4b084cb9c8147f10faabb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleBulletMovement
-  MaxDistance: 200
+  MaxDistance: 500
   HasBeenTrained: 0
 --- !u!61 &3270478747409121248
 BoxCollider2D:

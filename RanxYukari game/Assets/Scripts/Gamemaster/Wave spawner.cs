@@ -14,6 +14,7 @@ public class Wavespawner : MonoBehaviour
     [SerializeField] List<GameObject> EnemysSpawned; // Enemys on the field.
     [SerializeField] List<WaveDialog> WaveDialogList; // When and what dialogs start.
     [SerializeField] List<Wavemodifier> WaveModifierList; // When and what dialogs start.
+    
     DialogMaster DialogMaster;
     void Start()
     {

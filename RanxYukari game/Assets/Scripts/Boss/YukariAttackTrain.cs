@@ -13,7 +13,7 @@ public class YukariAttackTrain : MonoBehaviour
     float InternalTimer;
     float TrainTime;
     float TotalTime;
-    int ChangeRotationAmount;
+    [SerializeField]  int ChangeRotationAmount;
     BossBase BossBase;
     GameObject Player;
     void Start()
@@ -48,6 +48,9 @@ public class YukariAttackTrain : MonoBehaviour
             CurveLeftBullet.transform.rotation = Quaternion.Euler(0f, 0f, Curve.Evaluate(TotalTime + (-0.5f * ChangeRotationAmount)) * -1);
             CurveLeftBullet.GetComponent<BulletInterface>().Velocity = BulletSpeed;
             CurveLeftBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+
+            BossBase.SpellcardChangeCall.AddListener(CurveRightBullet.GetComponent<BulletInterface>().BulletClear);
+                BossBase.SpellcardChangeCall.AddListener(CurveLeftBullet.GetComponent<BulletInterface>().BulletClear);
 
             //var StrightDownBullet = Instantiate(BulletToFire, transform.position, Quaternion.identity);
             //StrightDownBullet.transform.rotation = Quaternion.Euler(0f, 0f, 180 * -1);

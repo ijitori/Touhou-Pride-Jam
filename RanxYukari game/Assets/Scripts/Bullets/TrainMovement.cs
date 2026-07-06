@@ -86,16 +86,16 @@ public class TrainMovement : MonoBehaviour, BulletInterface
     void HitObject(GameObject collision)
     {
         
-        var PlayerBase = collision.GetComponent<PlayerBase>();
+        //var PlayerBase = collision.GetComponent<PlayerBase>();
         var SimpleBulletMovement = collision.GetComponent<SimpleBulletMovement>();
-        if(PlayerBase)
-        {
-            if(PlayerBase.Immortal != true)
-            {
-                PlayerBase.Hit(1);
+        //if(PlayerBase)
+        //{
+        //    if(PlayerBase.Immortal != true)
+        //    {
+        //        PlayerBase.Hit(1);
                 //Object.Destroy(this.gameObject);      
-            }
-        }
+        //    }
+        //}
             
         if(SimpleBulletMovement)
         {

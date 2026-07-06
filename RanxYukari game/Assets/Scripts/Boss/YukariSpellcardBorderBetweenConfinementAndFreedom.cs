@@ -63,6 +63,7 @@ public class YukariSpellcardBorderBetweenConfinementAndFreedom : MonoBehaviour
             BossBase.SpellcardChangeCall.AddListener(OrbBullet3.GetComponent<BulletInterface>().BulletClear);
 
             BossBase.SpellcardChangeCall.AddListener(OrbBullet.GetComponent<BulletInterface>().BulletClear);
+            BossBase.SpellcardChangeCall.AddListener(OrbBullet3.GetComponent<BulletInterface>().BulletClear);
             BossBase.SpellcardChangeCall.AddListener(OrbBullet2.GetComponent<BulletInterface>().BulletClear);
             
             InternalTimer = AttackCoolDown;

@@ -1,20 +1,26 @@
 using UnityEngine;
 
-public class SimpleBulletMovement : MonoBehaviour, BulletInterface
+public class BulletWrapAround : MonoBehaviour, BulletInterface
 {
-    public float Velocity { get; set; } = 100;
+    public float Velocity { get; set; } = 10;
     [SerializeField]
     float MaxDistance = 500;
+    [SerializeField] bool WraparoundCoolDownBool;
+    [SerializeField] float WraparoundCoolDownTotal;
+    [SerializeField] float InternalTimer;
     Vector3 TrajectoryStart;
     Vector3 LastFramePos;
     float DistanceTravled;
-    float TimeAlive;
     public bool EnemyBullet { get; set; }
     public bool HasBeenTrained;
     bool IsPaused;
     Renderer Renderer;
     Color ColorSave;
     GameObject Player;
+
+    public float left = .8f; //Temporary until left to right value is worked out
+  public float right = .5f; //Temporary until right to left value is worked out
+
     
     void Awake()
     {
@@ -28,6 +34,37 @@ public class SimpleBulletMovement : MonoBehaviour, BulletInterface
     {
         if(IsPaused!=true)
         {
+        if(WraparoundCoolDownBool!=true)
+        {
+            var newPosition = transform.position;
+
+            var viewportPosition = Camera.main.WorldToViewportPoint(transform.position);
+            if (viewportPosition.x > 1 || viewportPosition.x < 0)
+                {
+                    if (viewportPosition.x <0) 
+                    {
+                        newPosition.x = -newPosition.x; //- left;
+                        WraparoundCoolDownBool = true;
+                    }
+            else
+                newPosition.x = -newPosition.x;
+                WraparoundCoolDownBool = true;
+            }
+            if (viewportPosition.y > 1 || viewportPosition.y < 0)
+            {
+                newPosition.y = -newPosition.y; //+ right;
+                WraparoundCoolDownBool = true;
+            }
+            transform.position = newPosition; 
+        } else
+            {
+                InternalTimer -= Time.deltaTime;
+                if(InternalTimer<=0)
+                {
+                    WraparoundCoolDownBool = false;
+                    InternalTimer = WraparoundCoolDownTotal;
+                }
+            }
         
         
         DistanceTravled = Vector3.Distance(TrajectoryStart, transform.position);
@@ -51,7 +88,7 @@ public class SimpleBulletMovement : MonoBehaviour, BulletInterface
             }
         }
 
-        if ( DistanceTravled >= MaxDistance)
+        if ( DistanceTravled >= 999999) // basically disabled but just to make sure it doesnt glitch
         {
             
             Destroy(gameObject);
