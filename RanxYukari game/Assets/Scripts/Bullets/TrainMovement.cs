@@ -32,7 +32,7 @@ public class TrainMovement : MonoBehaviour, BulletInterface
         DistanceTravled = Vector3.Distance(TrajectoryStart, transform.position);
 
         LastFramePos = this.transform.position;
-        transform.position += transform.up * Velocity * Time.deltaTime;
+        transform.position += transform.right * -1 * Velocity * Time.deltaTime;
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         
         }

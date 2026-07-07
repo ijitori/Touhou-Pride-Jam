@@ -13,27 +13,18 @@ MonoBehaviour:
   m_Name: DialogTree
   m_EditorClassIdentifier: Assembly-CSharp::DialogTree
   DialogList:
-  - Dialog: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua
-    OnTheLeft: 1
-    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: -5095945925013896520, guid: 6a06f79bbb2b22647a139955e5d0b102, type: 3}
-    PortaritRight: {fileID: 7953767465850684005, guid: 68ff629dd2d37b04cbfd63687ccf29cc, type: 3}
-  - Dialog: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-      anim id est laborum
+  - Dialog: Hi aeon!
     OnTheLeft: 0
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: -5095945925013896520, guid: 6a06f79bbb2b22647a139955e5d0b102, type: 3}
-    PortaritRight: {fileID: 7953767465850684005, guid: 68ff629dd2d37b04cbfd63687ccf29cc, type: 3}
-  - Dialog: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-      anim id est laborum
-    OnTheLeft: 1
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: This is just a test
+    OnTheLeft: 0
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: -5095945925013896520, guid: 6a06f79bbb2b22647a139955e5d0b102, type: 3}
-    PortaritRight: {fileID: 7953767465850684005, guid: 68ff629dd2d37b04cbfd63687ccf29cc, type: 3}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2900560146370173281, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: Please enjoy and tell sarah how SHIT she is
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}

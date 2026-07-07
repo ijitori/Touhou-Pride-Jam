@@ -69,7 +69,7 @@ public class SimpleBulletMovement : MonoBehaviour, BulletInterface
         if(IsPaused==false)
         {
             ColorSave = Renderer.material.color;
-            Renderer.material.color = new Color(0f,0f,0f,1f);
+            Renderer.material.color = Color.yellow;
             IsPaused = true;
         } else
         {

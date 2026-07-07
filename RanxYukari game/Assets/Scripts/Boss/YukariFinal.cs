@@ -15,6 +15,8 @@ public class YukariFinal : MonoBehaviour
     [SerializeField] GameObject WallObject;
     [SerializeField] AnimationCurve CirlceCurve;
     [SerializeField] float CricleCoolDown;
+    [SerializeField] Sprite OrbBulltSprite;
+    [SerializeField] Sprite CurveBulltSprite;
     GameObject LeftWall;
     GameObject RightWall;
     GameObject UpWall;
@@ -33,7 +35,7 @@ public class YukariFinal : MonoBehaviour
         WallObject = Resources.Load<GameObject>("Prefabs/Wall") as GameObject;
         BulletToFire = Resources.Load<GameObject>("Prefabs/Enemy/Wraparound Enemy Bullet") as GameObject;
         BossBase = this.GetComponent<BossBase>();
-        
+        this.transform.position = new Vector3(0, 0, 0);
         LeftWall = (Instantiate(WallObject, new Vector3(110,18.4916992f,0), Quaternion.identity));
         RightWall = (Instantiate(WallObject, new Vector3(-110f,18.4916992f,0), Quaternion.identity));
         DownWall = (Instantiate(WallObject, new Vector3(0,-110f,0f), Quaternion.identity));
@@ -57,11 +59,15 @@ public class YukariFinal : MonoBehaviour
                 OrbBullet.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
                 OrbBullet.GetComponent<BulletInterface>().Velocity = 30;
                 OrbBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+                OrbBullet.transform.localScale  = new Vector3(9,9,0);
+                OrbBullet.GetComponent<SpriteRenderer>().sprite = OrbBulltSprite;
 
                 var OrbExtra3Bullet = Instantiate(BulletToFire, transform.position, Quaternion.identity);
                 OrbExtra3Bullet.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
                 OrbExtra3Bullet.GetComponent<BulletInterface>().Velocity = 5;
                 OrbExtra3Bullet.GetComponent<BulletInterface>().EnemyBullet = true;
+                OrbExtra3Bullet.transform.localScale  = new Vector3(9,9,0);
+                OrbExtra3Bullet.GetComponent<SpriteRenderer>().sprite = OrbBulltSprite;
                 //OrbExtra3Bullet.transform.localScale  += new Vector3(3,3,0);
 
                 BossBase.SpellcardChangeCall.AddListener(OrbBullet.GetComponent<BulletInterface>().BulletClear);
@@ -78,11 +84,15 @@ public class YukariFinal : MonoBehaviour
                 CurveRightBullet.transform.rotation = Quaternion.Euler(0f, 0f, Curve.Evaluate(totalTime + (-0.5f * ChangeRotationAmount)));
                 CurveRightBullet.GetComponent<BulletInterface>().Velocity = CurveBulletSpeed;
                 CurveRightBullet.GetComponent<BulletInterface>().EnemyBullet = true; 
+                
 
                 var CurveLeftBullet = Instantiate(BulletToFire, transform.position, Quaternion.identity);
                 CurveLeftBullet.transform.rotation = Quaternion.Euler(0f, 0f, Curve.Evaluate(totalTime + (-0.5f * ChangeRotationAmount)) * -1);
                 CurveLeftBullet.GetComponent<BulletInterface>().Velocity = CurveBulletSpeed;
                 CurveLeftBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+
+                CurveRightBullet.GetComponent<SpriteRenderer>().sprite = CurveBulltSprite;
+                CurveLeftBullet.GetComponent<SpriteRenderer>().sprite = CurveBulltSprite;
 
                 BossBase.SpellcardChangeCall.AddListener(CurveRightBullet.GetComponent<BulletInterface>().BulletClear);
                 BossBase.SpellcardChangeCall.AddListener(CurveLeftBullet.GetComponent<BulletInterface>().BulletClear);
@@ -102,6 +112,9 @@ public class YukariFinal : MonoBehaviour
                 CurveLeftBullet.GetComponent<BulletInterface>().Velocity = CurveBulletSpeed;
                 CurveLeftBullet.GetComponent<BulletInterface>().EnemyBullet = true;
 
+                CurveRightBullet.GetComponent<SpriteRenderer>().sprite = CurveBulltSprite;
+                CurveLeftBullet.GetComponent<SpriteRenderer>().sprite = CurveBulltSprite;
+
                 BossBase.SpellcardChangeCall.AddListener(CurveRightBullet.GetComponent<BulletInterface>().BulletClear);
                 BossBase.SpellcardChangeCall.AddListener(CurveLeftBullet.GetComponent<BulletInterface>().BulletClear);
             }
@@ -120,6 +133,9 @@ public class YukariFinal : MonoBehaviour
                 CurveLeftBullet.GetComponent<BulletInterface>().Velocity = CurveBulletSpeed;
                 CurveLeftBullet.GetComponent<BulletInterface>().EnemyBullet = true;
 
+                CurveRightBullet.GetComponent<SpriteRenderer>().sprite = CurveBulltSprite;
+                CurveLeftBullet.GetComponent<SpriteRenderer>().sprite = CurveBulltSprite;
+
                 BossBase.SpellcardChangeCall.AddListener(CurveRightBullet.GetComponent<BulletInterface>().BulletClear);
                 BossBase.SpellcardChangeCall.AddListener(CurveLeftBullet.GetComponent<BulletInterface>().BulletClear);
             }
@@ -137,6 +153,9 @@ public class YukariFinal : MonoBehaviour
                 CurveLeftBullet.transform.rotation = Quaternion.Euler(0f, 0f, Curve.Evaluate(totalTime + (-0.5f * ChangeRotationAmount)) * -1 - 90);
                 CurveLeftBullet.GetComponent<BulletInterface>().Velocity = CurveBulletSpeed;
                 CurveLeftBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+
+                CurveRightBullet.GetComponent<SpriteRenderer>().sprite = CurveBulltSprite;
+                CurveLeftBullet.GetComponent<SpriteRenderer>().sprite = CurveBulltSprite;
 
                 BossBase.SpellcardChangeCall.AddListener(CurveRightBullet.GetComponent<BulletInterface>().BulletClear);
                 BossBase.SpellcardChangeCall.AddListener(CurveLeftBullet.GetComponent<BulletInterface>().BulletClear);
@@ -170,6 +189,9 @@ public class YukariFinal : MonoBehaviour
                 OrbBullet.transform.rotation = Quaternion.Euler(0f, 0f, CirlceCurve.Evaluate(totalTime));
                 OrbBullet.GetComponent<BulletInterface>().Velocity = 20;
                 OrbBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+                OrbBullet.transform.localScale  = new Vector3(9,9,0);
+                OrbBullet.GetComponent<SpriteRenderer>().sprite = CurveBulltSprite;
+                
 
                 BossBase.SpellcardChangeCall.AddListener(OrbBullet.GetComponent<BulletInterface>().BulletClear);
 
