@@ -2,8 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 public class PressPlay : MonoBehaviour
 {
+    public AudioResource SongTEst;
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -28,6 +30,7 @@ public class PressPlay : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(0.4f);
+        MusicSoundManager.ChangeSongStatic(SongTEst);
         SceneManager.LoadScene("Game");
         StartCoroutine("ReFade");
 

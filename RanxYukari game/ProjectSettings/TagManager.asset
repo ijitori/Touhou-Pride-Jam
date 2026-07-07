@@ -7,6 +7,8 @@ TagManager:
   - Wall
   - BossHP
   - Background
+  - SFX
+  - Music
   layers:
   - Default
   - TransparentFX
