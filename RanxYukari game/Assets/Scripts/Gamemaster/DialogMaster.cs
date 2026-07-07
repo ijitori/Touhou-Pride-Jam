@@ -15,8 +15,10 @@ public class DialogMaster : MonoBehaviour
     [SerializeField] public DialogTree CurrentDialogTree;
     [SerializeField] int DialogTreeListPlacement; //what place on the list our dialog is on
     [SerializeField] InputAction DialogInput;
+    public bool IsEnding;
 
     PlayerAttacking PlayerAttacking;
+    PlayerBase PlayerBase;
     PlayerMovement PlayerMovement;
 
     Wavespawner Wavespawner;
@@ -36,12 +38,19 @@ public class DialogMaster : MonoBehaviour
     {
         Ui.SetActive(false); //Set UI to false if its active.
 
-        var Player = GameObject.FindGameObjectWithTag("Player");
+        if(IsEnding == false)
+        {
+            var Player = GameObject.FindGameObjectWithTag("Player");
 
-        PlayerAttacking = Player.GetComponent<PlayerAttacking>();
-        PlayerMovement = Player.GetComponent<PlayerMovement>();
+            PlayerAttacking = Player.GetComponent<PlayerAttacking>();
+            PlayerBase = Player.GetComponent<PlayerBase>();
+            PlayerMovement = Player.GetComponent<PlayerMovement>();
         
-        Wavespawner = this.GetComponent<Wavespawner>();
+            Wavespawner = this.GetComponent<Wavespawner>();
+        } else
+        {
+            StartDialog();
+        }
     }
 
     public void StartDialog()
@@ -51,12 +60,16 @@ public class DialogMaster : MonoBehaviour
 
         var TreePlacement = CurrentDialogTree.DialogList[DialogTreeListPlacement];
 
-        PlayerMovement.MovementInput.Disable();
-        PlayerMovement.FocusInput.Disable();
-        PlayerMovement.DashInput.Disable();
-        PlayerAttacking.AttackInput.Disable();
+        if(IsEnding == false)
+        {
+            PlayerMovement.MovementInput.Disable();
+            PlayerMovement.FocusInput.Disable();
+            PlayerMovement.DashInput.Disable();
+            PlayerAttacking.AttackInput.Disable();
+            PlayerBase.Immortal = true;
 
-        PlayerAttacking.AutoFire = false;
+            PlayerAttacking.AutoFire = false;
+        }
 
         DialogInput.Enable();
         
@@ -135,12 +148,16 @@ public class DialogMaster : MonoBehaviour
         Ui.SetActive(false);
         ContentText.text = ""; //Rest text
         DialogInput.Disable();
+        if(IsEnding == false)
+        {
+            PlayerBase.Immortal = false;
 
-        PlayerMovement.MovementInput.Enable();
-        PlayerMovement.FocusInput.Enable();
-        PlayerMovement.DashInput.Enable();
-        PlayerAttacking.AttackInput.Enable();
+            PlayerMovement.MovementInput.Enable();
+            PlayerMovement.FocusInput.Enable();
+            PlayerMovement.DashInput.Enable();
+            PlayerAttacking.AttackInput.Enable();
 
-        Wavespawner.StartWave();
+            Wavespawner.StartWave();   
+        }
     }
 }

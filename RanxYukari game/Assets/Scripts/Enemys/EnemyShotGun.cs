@@ -1,6 +1,6 @@
 using UnityEngine;
-//Lets out a bullet directed at the player. Code by rat queen
-public class EnemySentryAttack : MonoBehaviour
+
+public class EnemyShotGun : MonoBehaviour
 {
     GameObject Player;
     [SerializeField] GameObject BulletToFire;
@@ -33,5 +33,17 @@ public class EnemySentryAttack : MonoBehaviour
         BulletInterface.Velocity = BulletSpeed;
         float rot_z = Mathf.Atan2(ReltivePos.y, ReltivePos.x) * Mathf.Rad2Deg;
         Bullet.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
+
+        var Bullet2 = Instantiate(BulletToFire, transform.position, Quaternion.identity);
+        var Bullet2Interface = Bullet2.GetComponent<BulletInterface>();
+        Bullet2Interface.EnemyBullet = true;
+        Bullet2Interface.Velocity = BulletSpeed;
+        Bullet2.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 85);
+
+        var Bullet3 = Instantiate(BulletToFire, transform.position, Quaternion.identity);
+        var Bullet3Interface = Bullet3.GetComponent<BulletInterface>();
+        Bullet3Interface.EnemyBullet = true;
+        Bullet3Interface.Velocity = BulletSpeed;
+        Bullet3.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 95);
     }
 }

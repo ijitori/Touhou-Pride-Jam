@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using System;
+using Unity.VisualScripting;
 // Similar To EnemyBase, but has a spellcard system simialr to the games. By rat queen
 public class BossBase : MonoBehaviour, EnemyHitInterface
 {
@@ -54,10 +55,11 @@ public class BossBase : MonoBehaviour, EnemyHitInterface
     public void ChangeAttack()
     {
         Debug.Log(SpellCardList.Count);
+        SpellCardList.Remove(SpellCardList[0]);
+        Destroy(CurrentAttack); //Remove the old attack
         if(SpellCardList.Count != 0)
         {
-            SpellCardList.Remove(SpellCardList[0]);
-            Destroy(CurrentAttack); //Remove the old attack
+             
             
             
             SpellCardList[0].SpellCardMonoBehaivor.enabled = true;
@@ -69,7 +71,10 @@ public class BossBase : MonoBehaviour, EnemyHitInterface
             
         } else
         {
-            //Call boss end stuff here once you (rat queen) program it
+
+            SpellcardChangeCall.Invoke("Clear Bullets");
+            GameMasterObject.GetComponent<Wavespawner>().StartWave();
+            Destroy(this.gameObject);
         }
     }
     
