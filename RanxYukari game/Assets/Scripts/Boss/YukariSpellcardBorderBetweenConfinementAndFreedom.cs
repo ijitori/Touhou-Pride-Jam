@@ -8,6 +8,9 @@ public class YukariSpellcardBorderBetweenConfinementAndFreedom : MonoBehaviour
     [SerializeField] AnimationCurve Curve;
     [SerializeField] AnimationCurve CirlceCurve;
     [SerializeField] float AttackCoolDown;
+    [SerializeField] Sprite OrbBulletSprite;
+    [SerializeField] Sprite Orb2BulletSprite;
+    [SerializeField] Sprite Orb3BulletSprite;
     
     float InternalTimer;
     float TotalTime;
@@ -46,11 +49,13 @@ public class YukariSpellcardBorderBetweenConfinementAndFreedom : MonoBehaviour
             OrbBullet.transform.rotation = Quaternion.Euler(0f, 0f, CirlceCurve.Evaluate(TotalTime));
             OrbBullet.GetComponent<BulletInterface>().Velocity = 40;
             OrbBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+            OrbBullet.GetComponent<SpriteRenderer>().sprite = OrbBulletSprite;
 
             var OrbBullet2 = Instantiate(BulletToFire, transform.position, Quaternion.identity);
             OrbBullet2.transform.rotation = Quaternion.Euler(0f, 0f, CirlceCurve.Evaluate(TotalTime) - 90);
             OrbBullet2.GetComponent<BulletInterface>().Velocity = 10;
             OrbBullet2.GetComponent<BulletInterface>().EnemyBullet = true;
+            OrbBullet2.GetComponent<SpriteRenderer>().sprite = Orb2BulletSprite;
 
             var ReltivePos = (Player.transform.position) - this.transform.position;
             float rot_z = Mathf.Atan2(ReltivePos.y, ReltivePos.x) * Mathf.Rad2Deg;
@@ -60,9 +65,12 @@ public class YukariSpellcardBorderBetweenConfinementAndFreedom : MonoBehaviour
             OrbBullet3.GetComponent<BulletInterface>().Velocity = 35;
             OrbBullet3.GetComponent<BulletInterface>().EnemyBullet = true;
             OrbBullet3.transform.localScale  += new Vector3(1,1,0);
-            BossBase.SpellcardChangeCall.AddListener(OrbBullet3.GetComponent<BulletInterface>().BulletClear);
+            OrbBullet3.GetComponent<SpriteRenderer>().sprite = Orb3BulletSprite;
 
+           
+            BossBase.SpellcardChangeCall.AddListener(OrbBullet3.GetComponent<BulletInterface>().BulletClear);
             BossBase.SpellcardChangeCall.AddListener(OrbBullet.GetComponent<BulletInterface>().BulletClear);
+            BossBase.SpellcardChangeCall.AddListener(OrbBullet3.GetComponent<BulletInterface>().BulletClear);
             BossBase.SpellcardChangeCall.AddListener(OrbBullet2.GetComponent<BulletInterface>().BulletClear);
             
             InternalTimer = AttackCoolDown;

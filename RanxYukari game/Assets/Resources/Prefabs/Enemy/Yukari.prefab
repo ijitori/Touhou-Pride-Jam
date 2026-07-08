@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7940045251522776338}
   - component: {fileID: -8082098482419755934}
   - component: {fileID: -5095531245521786396}
+  - component: {fileID: 4376648777427678043}
   - component: {fileID: -2631978921969366673}
   - component: {fileID: -7103278502520454701}
   m_Layer: 6
@@ -133,8 +134,13 @@ MonoBehaviour:
     IsTimeOut: 0
     SpellcardHealth: 200
     SpellCardMonoBehaivor: {fileID: -5095531245521786396}
+  - IsSpellCard: 1
+    IsTimeOut: 1
+    SpellcardHealth: 7760
+    SpellCardMonoBehaivor: {fileID: 4376648777427678043}
   GameMasterObject: {fileID: 0}
   CurrentAttack: {fileID: -7041587974441774855}
+  Display: {fileID: 0}
   SpellcardChangeCall:
     m_PersistentCalls:
       m_Calls: []
@@ -154,6 +160,9 @@ MonoBehaviour:
   AttackCoolDown: 0.42
   OrbAttackCoolDown: 1.05
   PillarAmount: 8
+  NormalBulletSprite: {fileID: 8470659122807649293, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  SlowBulletSprite: {fileID: 2157313641416058187, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  OrbSprite: {fileID: -8771932511996877764, guid: 058e6dad5dad6664d94931f391736ffa, type: 3}
 --- !u!114 &7933926919751278796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +178,11 @@ MonoBehaviour:
   BulletToFire: {fileID: 0}
   AttackCoolDown: 0.21
   MoveCoolDown: 3.28
+  BrustSprite: {fileID: 5547033938843002900, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  Stream1Sprite: {fileID: 8470659122807649293, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  Stream2Sprite: {fileID: 8470659122807649293, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  Stream3Sprite: {fileID: 8470659122807649293, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  Stream4Sprite: {fileID: 8470659122807649293, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
 --- !u!114 &7940045251522776338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +248,9 @@ MonoBehaviour:
   ShiftTime: 3
   IsXBool: 0
   PillarBulletSpeed: 50
+  PillarBulletSprite: {fileID: -1477819118, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  LineBulletSprite: {fileID: 1116113066340436632, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  OrbSprite: {fileID: -3809660307513326224, guid: 058e6dad5dad6664d94931f391736ffa, type: 3}
   PauseEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -300,6 +317,9 @@ MonoBehaviour:
     m_PostInfinity: 1
     m_RotationOrder: 4
   AttackCoolDown: 0.03
+  OrbBulletSprite: {fileID: 5821662906753582505, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  Orb2BulletSprite: {fileID: -3924154564769751150, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  Orb3BulletSprite: {fileID: -2262039850974495659, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
 --- !u!114 &-5095531245521786396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +363,103 @@ MonoBehaviour:
   TrainCoolDown: 1.84
   BulletSpeed: 20
   TrainWarningSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  ChangeRotationAmount: 0
+--- !u!114 &4376648777427678043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670078799847007404}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d346a19dd01b69429bd1e2182cadd26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YukariFinal
+  BulletToFire: {fileID: 0}
+  AttackCoolDown: 0.11
+  OrbAttackCoolDown: 1.39
+  totalTime: 0
+  PillarAmount: 0
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: -180
+      inSlope: 300
+      outSlope: 300
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3
+      value: -90
+      inSlope: 300
+      outSlope: 300
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  WallAnimation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 3
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  CurveBulletSpeed: 15
+  CurveCoolDownSpeed: 0
+  ChangeRotationAmount: 1
+  WallObject: {fileID: 0}
+  CirlceCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 360
+      outSlope: 360
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 360
+      inSlope: 360
+      outSlope: 360
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  CricleCoolDown: 0.09
+  OrbBulltSprite: {fileID: -8771932511996877764, guid: 058e6dad5dad6664d94931f391736ffa, type: 3}
+  CurveBulltSprite: {fileID: 8626685105648744835, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
 --- !u!50 &-2631978921969366673
 Rigidbody2D:
   serializedVersion: 5

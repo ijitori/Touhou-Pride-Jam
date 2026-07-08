@@ -5,6 +5,11 @@ public class YukariAttackStream : MonoBehaviour
     [SerializeField] GameObject BulletToFire;
     [SerializeField] float AttackCoolDown;
     [SerializeField] float MoveCoolDown;
+    [SerializeField] Sprite BrustSprite;
+    [SerializeField] Sprite Stream1Sprite;
+    [SerializeField] Sprite Stream2Sprite;
+    [SerializeField] Sprite Stream3Sprite;
+    [SerializeField] Sprite Stream4Sprite;
     float InternalTimer;
     float MoveInternalTimer;
     GameObject Player;
@@ -34,6 +39,7 @@ public class YukariAttackStream : MonoBehaviour
             AttackRightBullet.transform.rotation = Quaternion.Euler(0f, 0f, rotL_z + 90);
             AttackRightBullet.GetComponent<BulletInterface>().Velocity = 30;
             AttackRightBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+            AttackRightBullet.GetComponent<SpriteRenderer>().sprite = Stream1Sprite;
             
             var AttackLeftBullet = Instantiate(BulletToFire, new Vector3(-52.1539993f,-29.3759995f,0f), Quaternion.identity);
             var ReltivePosBulletLeft = (new Vector3(-52.1539993f,-29.3759995f,0f)) - Player.transform.position;
@@ -42,6 +48,7 @@ public class YukariAttackStream : MonoBehaviour
             AttackLeftBullet.transform.rotation = Quaternion.Euler(0f, 0f, rotR_z + 90);
             AttackLeftBullet.GetComponent<BulletInterface>().Velocity = 30;
             AttackLeftBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+            AttackLeftBullet.GetComponent<SpriteRenderer>().sprite = Stream2Sprite;
 
             var AttackUpperRightBullet = Instantiate(BulletToFire, new Vector3(52.1539993f,29.3759995f,0f), Quaternion.identity);
             var ReltivePosBulletUpperRight = (new Vector3(52.1539993f,29.3759995f,0f)) - Player.transform.position;
@@ -50,6 +57,7 @@ public class YukariAttackStream : MonoBehaviour
             AttackUpperRightBullet.transform.rotation = Quaternion.Euler(0f, 0f, rotUL_z + 90);
             AttackUpperRightBullet.GetComponent<BulletInterface>().Velocity = 30;
             AttackUpperRightBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+            AttackUpperRightBullet.GetComponent<SpriteRenderer>().sprite = Stream3Sprite;
             
             var AttackUpperLeftBullet = Instantiate(BulletToFire, new Vector3(-52.1539993f,29.3759995f,0f), Quaternion.identity);
             var ReltivePosBulletUpperLeft = (new Vector3(-52.1539993f,29.3759995f,0f)) - Player.transform.position;
@@ -58,6 +66,7 @@ public class YukariAttackStream : MonoBehaviour
             AttackUpperLeftBullet.transform.rotation = Quaternion.Euler(0f, 0f, rotUR_z + 90);
             AttackUpperLeftBullet.GetComponent<BulletInterface>().Velocity = 30;
             AttackUpperLeftBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+            AttackUpperLeftBullet.GetComponent<SpriteRenderer>().sprite = Stream4Sprite;
 
             BossBase.SpellcardChangeCall.AddListener(AttackRightBullet.GetComponent<BulletInterface>().BulletClear);
             BossBase.SpellcardChangeCall.AddListener(AttackLeftBullet.GetComponent<BulletInterface>().BulletClear);
@@ -88,6 +97,7 @@ public class YukariAttackStream : MonoBehaviour
             var SlowBullet = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, RanFloat + (i * (80))));
             SlowBullet.GetComponent<BulletInterface>().Velocity = 5;
             SlowBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+            SlowBullet.GetComponent<SpriteRenderer>().sprite = BrustSprite;
 
             BossBase.SpellcardChangeCall.AddListener(SlowBullet.GetComponent<BulletInterface>().BulletClear);
         }

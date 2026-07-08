@@ -6,6 +6,9 @@ public class BossAttackTest : MonoBehaviour
     [SerializeField] float AttackCoolDown;
     [SerializeField] float OrbAttackCoolDown;
     [SerializeField] int PillarAmount;
+    [SerializeField] Sprite NormalBulletSprite;
+    [SerializeField] Sprite SlowBulletSprite;
+    [SerializeField] Sprite OrbSprite;
     float InternalTimer;
     float InternalOrbTimer;
     BossBase BossBase;
@@ -28,10 +31,13 @@ public class BossAttackTest : MonoBehaviour
                 var NomralBullet = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 0f + (i * (80))));
                 NomralBullet.GetComponent<BulletInterface>().Velocity = 50;
                 NomralBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+                NomralBullet.GetComponent<SpriteRenderer>().sprite = NormalBulletSprite;
+                NomralBullet.transform.localScale  = new Vector3(9,9,0);
                 var SlowBullet = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 0f + (i * (80))));
                 SlowBullet.GetComponent<BulletInterface>().Velocity = 10;
                 SlowBullet.GetComponent<BulletInterface>().EnemyBullet = true;
-            
+                SlowBullet.GetComponent<SpriteRenderer>().sprite = SlowBulletSprite;
+                SlowBullet.transform.localScale  = new Vector3(9,9,0);
                 BossBase.SpellcardChangeCall.AddListener(NomralBullet.GetComponent<BulletInterface>().BulletClear);
                 BossBase.SpellcardChangeCall.AddListener(SlowBullet.GetComponent<BulletInterface>().BulletClear);
             }
@@ -68,6 +74,11 @@ public class BossAttackTest : MonoBehaviour
             OrbExtra3Bullet.GetComponent<BulletInterface>().Velocity = 5;
             OrbExtra3Bullet.GetComponent<BulletInterface>().EnemyBullet = true;
             OrbExtra3Bullet.transform.localScale  += new Vector3(3,3,0);
+
+            OrbBullet.GetComponent<SpriteRenderer>().sprite = OrbSprite;
+            OrbExtra1Bullet.GetComponent<SpriteRenderer>().sprite = OrbSprite;
+            OrbExtra2Bullet.GetComponent<SpriteRenderer>().sprite = OrbSprite;
+            OrbExtra3Bullet.GetComponent<SpriteRenderer>().sprite = OrbSprite;
 
             BossBase.SpellcardChangeCall.AddListener(OrbBullet.GetComponent<BulletInterface>().BulletClear);
             BossBase.SpellcardChangeCall.AddListener(OrbExtra1Bullet.GetComponent<BulletInterface>().BulletClear);

@@ -13,7 +13,7 @@ public class YukariAttackTrain : MonoBehaviour
     float InternalTimer;
     float TrainTime;
     float TotalTime;
-    int ChangeRotationAmount;
+    [SerializeField]  int ChangeRotationAmount;
     BossBase BossBase;
     GameObject Player;
     void Start()
@@ -23,9 +23,9 @@ public class YukariAttackTrain : MonoBehaviour
         TrainObject = Resources.Load<GameObject>("Prefabs/Enemy/Train") as GameObject;
         Player = GameObject.FindGameObjectWithTag("Player");
         BossBase = this.GetComponent<BossBase>();
-        this.transform.position = new Vector3(0, 20, 0);
+        this.transform.position = new Vector3(0, 27, 0);
         TrainWarning = new GameObject("TrainWarning");
-        TrainWarning.transform.position = new Vector3(0, 20, 0);
+        TrainWarning.transform.position = this.transform.position;
         var TrainWarningRender = TrainWarning.AddComponent<SpriteRenderer>();
         TrainWarningRender.transform.localScale  += new Vector3(10,150,0);
         TrainWarningRender.material.color = new Color (0.5f, 0.5f, 0.5f, 0.1f);
@@ -49,6 +49,9 @@ public class YukariAttackTrain : MonoBehaviour
             CurveLeftBullet.GetComponent<BulletInterface>().Velocity = BulletSpeed;
             CurveLeftBullet.GetComponent<BulletInterface>().EnemyBullet = true;
 
+            BossBase.SpellcardChangeCall.AddListener(CurveRightBullet.GetComponent<BulletInterface>().BulletClear);
+                BossBase.SpellcardChangeCall.AddListener(CurveLeftBullet.GetComponent<BulletInterface>().BulletClear);
+
             //var StrightDownBullet = Instantiate(BulletToFire, transform.position, Quaternion.identity);
             //StrightDownBullet.transform.rotation = Quaternion.Euler(0f, 0f, 180 * -1);
             //StrightDownBullet.GetComponent<BulletInterface>().Velocity = BulletSpeed;
@@ -63,6 +66,10 @@ public class YukariAttackTrain : MonoBehaviour
             if(TrainTime <= -0.5f)
             {
                 var Train = Instantiate(TrainObject, transform.position, TrainWarning.transform.rotation);
+                var ReltivePos = (this.transform.position - Player.transform.position);
+                float rotR_z = Mathf.Atan2(ReltivePos.y, ReltivePos.x) * Mathf.Rad2Deg;
+                Train.transform.rotation = Quaternion.Euler(0f, 0f, rotR_z + 360);
+                //Train.transform.rotation = Quaternion.Euler(0f, 0f, TrainWarning.transform.rotation.z + 90);
                 
                 TrainTime = TrainCoolDown;    
             }
@@ -78,5 +85,10 @@ public class YukariAttackTrain : MonoBehaviour
         TotalTime += Time.deltaTime;
         InternalTimer -= Time.deltaTime;
         TrainTime -= Time.deltaTime;
+    }
+
+    void OnDestroy()
+    {
+        Destroy(TrainWarning); 
     }
 }

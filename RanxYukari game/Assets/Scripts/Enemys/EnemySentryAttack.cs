@@ -5,6 +5,7 @@ public class EnemySentryAttack : MonoBehaviour
     GameObject Player;
     [SerializeField] GameObject BulletToFire;
     [SerializeField] float FireCoolDown;
+    [SerializeField] float BulletSpeed;
     float FireTimer;
     void Start()
     {
@@ -27,7 +28,9 @@ public class EnemySentryAttack : MonoBehaviour
     {
         var ReltivePos = (Player.transform.position) - this.transform.position; //Subtract the mouse pos with the pos of the gameobject to find how we need to rotate later
         var Bullet = Instantiate(BulletToFire, transform.position, Quaternion.identity);
-
+        var BulletInterface = Bullet.GetComponent<BulletInterface>();
+        BulletInterface.EnemyBullet = true;
+        BulletInterface.Velocity = BulletSpeed;
         float rot_z = Mathf.Atan2(ReltivePos.y, ReltivePos.x) * Mathf.Rad2Deg;
         Bullet.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
     }

@@ -4,7 +4,7 @@ public class SimpleBulletMovement : MonoBehaviour, BulletInterface
 {
     public float Velocity { get; set; } = 100;
     [SerializeField]
-    float MaxDistance;
+    float MaxDistance = 500;
     Vector3 TrajectoryStart;
     Vector3 LastFramePos;
     float DistanceTravled;
@@ -28,7 +28,7 @@ public class SimpleBulletMovement : MonoBehaviour, BulletInterface
     {
         if(IsPaused!=true)
         {
-        TimeAlive += 1;
+        
         
         DistanceTravled = Vector3.Distance(TrajectoryStart, transform.position);
 
@@ -51,7 +51,7 @@ public class SimpleBulletMovement : MonoBehaviour, BulletInterface
             }
         }
 
-        if (TimeAlive == 1000 || DistanceTravled >= MaxDistance)
+        if ( DistanceTravled >= MaxDistance)
         {
             
             Destroy(gameObject);
@@ -69,7 +69,7 @@ public class SimpleBulletMovement : MonoBehaviour, BulletInterface
         if(IsPaused==false)
         {
             ColorSave = Renderer.material.color;
-            Renderer.material.color = new Color(0f,0f,0f,1f);
+            Renderer.material.color = Color.yellow;
             IsPaused = true;
         } else
         {

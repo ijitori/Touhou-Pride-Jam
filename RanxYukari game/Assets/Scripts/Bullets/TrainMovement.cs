@@ -32,7 +32,7 @@ public class TrainMovement : MonoBehaviour, BulletInterface
         DistanceTravled = Vector3.Distance(TrajectoryStart, transform.position);
 
         LastFramePos = this.transform.position;
-        transform.position += transform.up * Velocity * Time.deltaTime;
+        transform.position += transform.right * -1 * Velocity * Time.deltaTime;
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         
         }
@@ -86,16 +86,16 @@ public class TrainMovement : MonoBehaviour, BulletInterface
     void HitObject(GameObject collision)
     {
         
-        var PlayerBase = collision.GetComponent<PlayerBase>();
+        //var PlayerBase = collision.GetComponent<PlayerBase>();
         var SimpleBulletMovement = collision.GetComponent<SimpleBulletMovement>();
-        if(PlayerBase)
-        {
-            if(PlayerBase.Immortal != true)
-            {
-                PlayerBase.Hit(1);
+        //if(PlayerBase)
+        //{
+        //    if(PlayerBase.Immortal != true)
+        //    {
+        //        PlayerBase.Hit(1);
                 //Object.Destroy(this.gameObject);      
-            }
-        }
+        //    }
+        //}
             
         if(SimpleBulletMovement)
         {

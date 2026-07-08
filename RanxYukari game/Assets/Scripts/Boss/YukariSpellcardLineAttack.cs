@@ -9,6 +9,9 @@ public class YukariSpellcardBorderBetweenStaticAndDynamic : MonoBehaviour
     [SerializeField] float ShiftTime;
     [SerializeField] bool IsXBool; //If this is true, the curve wiill be on the X axis
     [SerializeField] float PillarBulletSpeed;
+    [SerializeField] Sprite PillarBulletSprite;
+    [SerializeField] Sprite LineBulletSprite;
+    [SerializeField] Sprite OrbSprite;
     float InternalTimer;
     float TotalXTime;
     float TotalYTime;
@@ -41,7 +44,7 @@ public class YukariSpellcardBorderBetweenStaticAndDynamic : MonoBehaviour
                     var PillarBullet = Instantiate(BulletToFire, new Vector3(CurveX.Evaluate(TotalXTime + (i * 0.75f)),-29.3759995f,0f), Quaternion.identity);
                     PillarBullet.GetComponent<BulletInterface>().Velocity = PillarBulletSpeed;
                     PillarBullet.GetComponent<BulletInterface>().EnemyBullet = true;
-                    
+                    PillarBullet.GetComponent<SpriteRenderer>().sprite = PillarBulletSprite;
                     
 
                     PauseEvent.AddListener(PillarBullet.GetComponent<BulletInterface>().PauseBullet);
@@ -58,6 +61,7 @@ public class YukariSpellcardBorderBetweenStaticAndDynamic : MonoBehaviour
                 OrbBullet.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
                 OrbBullet.GetComponent<BulletInterface>().Velocity = 40;
                 OrbBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+                OrbBullet.GetComponent<SpriteRenderer>().sprite = OrbSprite;
                 OrbBullet.transform.localScale  += new Vector3(3,3,0);
                 BossBase.SpellcardChangeCall.AddListener(OrbBullet.GetComponent<BulletInterface>().BulletClear);
                 PauseEvent.AddListener(OrbBullet.GetComponent<BulletInterface>().PauseBullet);
@@ -69,6 +73,7 @@ public class YukariSpellcardBorderBetweenStaticAndDynamic : MonoBehaviour
                     PillarBulle.transform.rotation = Quaternion.Euler(0f, 0f, 0f - 90f);
                     PillarBulle.GetComponent<BulletInterface>().Velocity = PillarBulletSpeed;
                     PillarBulle.GetComponent<BulletInterface>().EnemyBullet = true;
+                    PillarBulle.GetComponent<SpriteRenderer>().sprite = PillarBulletSprite;
                     PauseEvent.AddListener(PillarBulle.GetComponent<BulletInterface>().PauseBullet);
                     BossBase.SpellcardChangeCall.AddListener(PillarBulle.GetComponent<BulletInterface>().BulletClear);
                 } 
@@ -78,7 +83,7 @@ public class YukariSpellcardBorderBetweenStaticAndDynamic : MonoBehaviour
                     var SlowBullet = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 0f + (i * (80))));
                     SlowBullet.GetComponent<BulletInterface>().Velocity = 10;
                     SlowBullet.GetComponent<BulletInterface>().EnemyBullet = true;
-            
+                    SlowBullet.GetComponent<SpriteRenderer>().sprite = LineBulletSprite;
                     
                     BossBase.SpellcardChangeCall.AddListener(SlowBullet.GetComponent<BulletInterface>().BulletClear);
                     PauseEvent.AddListener(SlowBullet.GetComponent<BulletInterface>().PauseBullet);
@@ -88,13 +93,14 @@ public class YukariSpellcardBorderBetweenStaticAndDynamic : MonoBehaviour
                 var ReltivePos = (Player.transform.position) - this.transform.position;
                 float rot_z = Mathf.Atan2(ReltivePos.y, ReltivePos.x) * Mathf.Rad2Deg;
 
-                var OrbBullet = Instantiate(BulletToFire, transform.position, Quaternion.identity);
-                OrbBullet.transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
-                OrbBullet.GetComponent<BulletInterface>().Velocity = 10;
-                OrbBullet.GetComponent<BulletInterface>().EnemyBullet = true;
-                OrbBullet.transform.localScale  += new Vector3(1,1,0);
-                BossBase.SpellcardChangeCall.AddListener(OrbBullet.GetComponent<BulletInterface>().BulletClear);
-                PauseEvent.AddListener(OrbBullet.GetComponent<BulletInterface>().PauseBullet);
+                //var OrbBullet = Instantiate(BulletToFire, transform.position, Quaternion.identity);
+                //OrbBullet.transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
+                //OrbBullet.GetComponent<BulletInterface>().Velocity = 10;
+                //OrbBullet.GetComponent<BulletInterface>().EnemyBullet = true;
+                //OrbBullet.GetComponent<SpriteRenderer>().sprite = OrbSprite;
+                //OrbBullet.transform.localScale  += new Vector3(1,1,0);
+                //BossBase.SpellcardChangeCall.AddListener(OrbBullet.GetComponent<BulletInterface>().BulletClear);
+                //PauseEvent.AddListener(OrbBullet.GetComponent<BulletInterface>().PauseBullet);
             }
             
 

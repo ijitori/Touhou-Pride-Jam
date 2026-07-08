@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 //Spawns enemys via waves. Code by rat queen
 public class Wavespawner : MonoBehaviour
 {
@@ -10,14 +11,17 @@ public class Wavespawner : MonoBehaviour
     int Points; //Each enemy costs points to spawn, the game will spawn enemys until the game master runs out of points
      [SerializeField]
     int PointsIncressEveryWave;
+    SpriteRenderer BackgroundRender;
     [SerializeField] List<EnemyStruct> UsableEnemysList; //Spawnable enemys the game can use.
     [SerializeField] List<GameObject> EnemysSpawned; // Enemys on the field.
     [SerializeField] List<WaveDialog> WaveDialogList; // When and what dialogs start.
     [SerializeField] List<Wavemodifier> WaveModifierList; // When and what dialogs start.
+    
     DialogMaster DialogMaster;
     void Start()
     {
         WaveNumber += 1;
+        BackgroundRender = GameObject.FindGameObjectWithTag("Background").GetComponent<SpriteRenderer>();
         DialogMaster = this.GetComponent<DialogMaster>();
         StartWave();
     }
@@ -45,8 +49,19 @@ public class Wavespawner : MonoBehaviour
             {
                 if(WaveModifierList[0].IsBossWave)
                 {
+                    BackgroundRender.sprite = Resources.Load<Sprite>("Images/Background_Boss") as Sprite;
                     var Boss = Instantiate(WaveModifierList[0].BossToSpawn, Vector3.zero, Quaternion.identity);
+                    var BossBase = Boss.GetComponent<BossBase>();
+                    BossBase.GameMasterObject = this.gameObject;
+
                     WaveModifierList.Remove(WaveModifierList[0]);
+                    return;
+                }
+
+                if(WaveModifierList[0].IsFinalWave)
+                {
+                    Debug.Log("scene");
+                    SceneManager.LoadScene("Ending");
                     return;
                 }
             }
@@ -112,4 +127,5 @@ public struct Wavemodifier
     public int WaveStartOn;
     public bool IsBossWave;
     public GameObject BossToSpawn;
+    public bool IsFinalWave;
 }

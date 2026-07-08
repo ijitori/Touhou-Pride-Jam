@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Wall
+  - BossHP
+  - Background
+  - SFX
+  - Music
   layers:
   - Default
   - TransparentFX
