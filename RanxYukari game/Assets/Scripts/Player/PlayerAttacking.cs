@@ -11,6 +11,7 @@ public class PlayerAttacking : MonoBehaviour
     [SerializeField] float FireCoolDown;
     float FireTimer;
     Camera Maincamera; //We need the main camera to find where the mouse pos is.
+    [SerializeField] Animator Animator;
     private void OnDisable()
     {
         AttackInput.Disable();
@@ -25,14 +26,19 @@ public class PlayerAttacking : MonoBehaviour
     void Start()
     {
         Maincamera = Camera.main;
+        
     }
 
     void ToggleFire(InputAction.CallbackContext context)
     {
         if(AutoFire)
         {
+            Animator.Play("Idle Shooting", -1, 0f);
             AutoFire = false;
-        } else { AutoFire = true;}
+        } else { 
+            AutoFire = true;
+            Animator.Play("Idle", -1, 0f);
+        }
     }
 
     void FixedUpdate()
@@ -41,6 +47,10 @@ public class PlayerAttacking : MonoBehaviour
         {
             FireTimer = FireCoolDown;
             Fire();
+        } 
+        if(AutoFire==false)
+        {
+            Animator.SetBool("IsShoot", false);
         }
 
         FireTimer -= Time.deltaTime;
@@ -55,6 +65,9 @@ public class PlayerAttacking : MonoBehaviour
         var Bullet = Instantiate(BulletToFire, transform.position, Quaternion.identity);
 
         float rot_z = Mathf.Atan2(ReltivePos.y, ReltivePos.x) * Mathf.Rad2Deg;
+        Animator.SetFloat("Horizontal", ReltivePos.x);
+        Animator.SetFloat("Vertical", ReltivePos.y);
+        Animator.SetBool("IsShoot", true);
         Bullet.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
     }
 }

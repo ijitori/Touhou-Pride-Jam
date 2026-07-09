@@ -13,17 +13,12 @@ MonoBehaviour:
   m_Name: DialogTree
   m_EditorClassIdentifier: Assembly-CSharp::DialogTree
   DialogList:
-  - Dialog: Hi aeon!
-    OnTheLeft: 0
-    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: 0}
-    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
   - Dialog: This is just a test
     OnTheLeft: 0
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
     PortaritLeft: {fileID: 0}
     PortaritRight: {fileID: -2900560146370173281, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-  - Dialog: Please enjoy and tell sarah how SHIT she is
+  - Dialog: Also the text will be here soon when its funny written
     OnTheLeft: 0
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
     PortaritLeft: {fileID: 0}
