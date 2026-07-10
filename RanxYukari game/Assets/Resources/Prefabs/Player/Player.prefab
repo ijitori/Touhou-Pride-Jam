@@ -231,6 +231,7 @@ MonoBehaviour:
   DeathUI: {fileID: 0}
   Display: {fileID: 0}
   IFrameTime: 1.5
+  Renderer: {fileID: 7711809726254357440}
   DeathEventCall:
     m_PersistentCalls:
       m_Calls: []

@@ -9,6 +9,7 @@ TagManager:
   - Background
   - SFX
   - Music
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

@@ -2227,7 +2227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f17f056939f907418a9b77c7a80ffe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PressPlay
-  SongTEst: {fileID: 0}
+  MenuSong: {fileID: 0}
+  StageSong: {fileID: 0}
   Fader: {fileID: 422304022}
 --- !u!225 &422304024
 CanvasGroup:

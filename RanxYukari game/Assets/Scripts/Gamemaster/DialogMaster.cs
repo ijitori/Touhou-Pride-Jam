@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using TMPro;
+using NUnit.Framework;
+using UnityEngine.SceneManagement;
 //Manage the UI and dialog relating to UI. By rat queen
 public class DialogMaster : MonoBehaviour
 {
@@ -15,7 +17,9 @@ public class DialogMaster : MonoBehaviour
     [SerializeField] public DialogTree CurrentDialogTree;
     [SerializeField] int DialogTreeListPlacement; //what place on the list our dialog is on
     [SerializeField] InputAction DialogInput;
+
     public bool IsEnding;
+    public bool IsProlog;
 
     PlayerAttacking PlayerAttacking;
     PlayerBase PlayerBase;
@@ -38,7 +42,7 @@ public class DialogMaster : MonoBehaviour
     {
         Ui.SetActive(false); //Set UI to false if its active.
 
-        if(IsEnding == false)
+        if(IsEnding == false && IsProlog == false)
         {
             var Player = GameObject.FindGameObjectWithTag("Player");
 
@@ -60,7 +64,7 @@ public class DialogMaster : MonoBehaviour
 
         var TreePlacement = CurrentDialogTree.DialogList[DialogTreeListPlacement];
 
-        if(IsEnding == false)
+        if(IsEnding == false && IsProlog == false)
         {
             PlayerMovement.MovementInput.Disable();
             PlayerMovement.FocusInput.Disable();
@@ -145,11 +149,12 @@ public class DialogMaster : MonoBehaviour
 
     public void EndDialog()
     {
-        Ui.SetActive(false);
-        ContentText.text = ""; //Rest text
-        DialogInput.Disable();
-        if(IsEnding == false)
+        
+        if(IsEnding == false && IsProlog == false)
         {
+            Ui.SetActive(false);
+            ContentText.text = ""; //Rest text
+            DialogInput.Disable();
             PlayerBase.Immortal = false;
 
             PlayerMovement.MovementInput.Enable();
@@ -158,6 +163,11 @@ public class DialogMaster : MonoBehaviour
             PlayerAttacking.AttackInput.Enable();
 
             Wavespawner.StartWave();   
+        }
+
+        if(IsProlog)
+        {
+            SceneManager.LoadScene("Game");
         }
     }
 }
