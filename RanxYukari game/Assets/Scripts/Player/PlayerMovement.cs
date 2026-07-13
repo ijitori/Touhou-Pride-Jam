@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     bool Dashing;
     [SerializeField]
     float DashCoolDown;
+    [SerializeField] Animator Animator;
     float DashCoolDownTimer;
     float startTime;
     [SerializeField]
@@ -40,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     bool CollidingWithBordar;
 
     GameObject DashAfterImage;
+    PlayerAttacking PlayerAttacking;
 
     private void OnDisable()
     {
@@ -58,6 +60,9 @@ public class PlayerMovement : MonoBehaviour
     {
         SpriteRenderer = this.GetComponent<Renderer>();
         PlayerBase = this.GetComponent<PlayerBase>();
+        PlayerAttacking = this.GetComponent<PlayerAttacking>();
+        //Animator = this.GetComponent<Animator>();
+        //Debug.Log(Animator);
     }
 
     
@@ -110,11 +115,22 @@ public class PlayerMovement : MonoBehaviour
 
         if(MoveDir != Vector2.zero && stop!=true)
         {
+            Animator.SetBool("IsMoving", true);
             TargetPos += new Vector3(MoveDir.x * MoveSpeed, MoveDir.y * MoveSpeed, 0); 
             var NewPos = new Vector3(MoveDir.x * MoveSpeed, MoveDir.y * MoveSpeed, 0);  
+
+            if(PlayerAttacking.AutoFire == false)
+            {
+                
+                Animator.SetFloat("Horizontal", MoveDir.x);
+                Animator.SetFloat("Vertical", MoveDir.y);
+            }
+            
             transform.position += NewPos;
         } else
         {
+            
+            Animator.SetBool("IsMoving", false);
             TargetPos = transform.position; //Rest Target Pos after we stop moving.
         }
 

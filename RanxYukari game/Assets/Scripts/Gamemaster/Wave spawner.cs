@@ -16,6 +16,7 @@ public class Wavespawner : MonoBehaviour
     [SerializeField] List<GameObject> EnemysSpawned; // Enemys on the field.
     [SerializeField] List<WaveDialog> WaveDialogList; // When and what dialogs start.
     [SerializeField] List<Wavemodifier> WaveModifierList; // When and what dialogs start.
+    GameObject Player;
     
     DialogMaster DialogMaster;
     void Start()
@@ -23,6 +24,7 @@ public class Wavespawner : MonoBehaviour
         WaveNumber += 1;
         BackgroundRender = GameObject.FindGameObjectWithTag("Background").GetComponent<SpriteRenderer>();
         DialogMaster = this.GetComponent<DialogMaster>();
+        Player = GameObject.FindGameObjectWithTag("Player");
         StartWave();
     }
 
@@ -73,6 +75,7 @@ public class Wavespawner : MonoBehaviour
 
             while(Points >= 0)
             {
+                
                 int randEnemyId = Random.Range(0, UsableEnemysList.Count );
                 Points -= UsableEnemysList[randEnemyId].PointsCost;
                 var Enemy = Instantiate(UsableEnemysList[randEnemyId].EnemyObject, GetSpawnPoint(), Quaternion.identity);
@@ -87,10 +90,18 @@ public class Wavespawner : MonoBehaviour
 
     public Vector3 GetSpawnPoint()
     {
+        
         int randX = Random.Range(-25, 25);
         int randY = Random.Range(-25, 25);
 
         Vector3 spawnPoint = new Vector3(randX, randY, 0.0f);
+
+        float dist = Vector3.Distance(spawnPoint, transform.position);
+
+        if(dist<=2)
+        {
+            spawnPoint = new Vector3(randX + 2, randY + 2, 0.0f);
+        }
         
 
         return spawnPoint;
@@ -104,6 +115,16 @@ public class Wavespawner : MonoBehaviour
         if(EnemysSpawned.Count==0)
         {
             WaveNumber += 1;
+
+            var Bullets = GameObject.FindGameObjectsWithTag ("EnemyBullet");
+
+            foreach (GameObject i in Bullets)
+            {
+                Destroy (i);
+            }
+
+                        
+                
             StartWave();
         }
     }

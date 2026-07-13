@@ -5,10 +5,12 @@ using System.Collections.Generic;
 using UnityEngine.Audio;
 public class PressPlay : MonoBehaviour
 {
-    public AudioResource SongTEst;
+    public AudioResource MenuSong;
+    public AudioResource StageSong;
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        MusicSoundManager.ChangeSongStatic(MenuSong);
     }
 
     [SerializeField]
@@ -16,6 +18,7 @@ public class PressPlay : MonoBehaviour
     public void Press()
     {
         StartCoroutine("Fade");
+        MusicSoundManager.ChangeSongStatic(StageSong);
         //SceneManager.LoadScene("Game");
     }
 
@@ -30,8 +33,8 @@ public class PressPlay : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(0.4f);
-        MusicSoundManager.ChangeSongStatic(SongTEst);
-        SceneManager.LoadScene("Game");
+        
+        SceneManager.LoadScene("Prolog");
         StartCoroutine("ReFade");
 
     }

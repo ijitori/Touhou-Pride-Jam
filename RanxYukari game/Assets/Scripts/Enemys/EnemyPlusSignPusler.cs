@@ -6,7 +6,8 @@ public class EnemyPlusSignPusler : MonoBehaviour
     [SerializeField] GameObject BulletToFire;
     [SerializeField] float FireCoolDown;
     [SerializeField] int BulletSpeed;
-    float FireTimer;
+    bool AltFire;
+    [SerializeField] float FireTimer;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -26,23 +27,49 @@ public class EnemyPlusSignPusler : MonoBehaviour
 
     void Fire()
     {
-        var Bullet1 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 0f));
-        var Bullet2 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 90f));
-        var Bullet3 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 180f));
-        var Bullet4 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, -90f)); //this code is PISSING ME OFF, im the oringal      Bullet walker
+        if(AltFire == false)
+        {
+            var Bullet1 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 0f));
+            var Bullet2 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 90f));
+            var Bullet3 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 180f));
+            var Bullet4 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, -90f)); //this code is PISSING ME OFF, im the oringal      Bullet walker
 
-        var Bullet1Interface = Bullet1.GetComponent<BulletInterface>();
-        var Bullet2Interface = Bullet2.GetComponent<BulletInterface>();
-        var Bullet3Interface = Bullet3.GetComponent<BulletInterface>();
-        var Bullet4Interface = Bullet4.GetComponent<BulletInterface>();
-        Bullet1Interface.EnemyBullet = true;
-        Bullet2Interface.EnemyBullet = true;
-        Bullet3Interface.EnemyBullet = true;
-        Bullet4Interface.EnemyBullet = true;
-        Bullet1Interface.Velocity = BulletSpeed;
-        Bullet2Interface.Velocity = BulletSpeed;
-        Bullet3Interface.Velocity = BulletSpeed;
-        Bullet4Interface.Velocity = BulletSpeed;
+            var Bullet1Interface = Bullet1.GetComponent<BulletInterface>();
+            var Bullet2Interface = Bullet2.GetComponent<BulletInterface>();
+            var Bullet3Interface = Bullet3.GetComponent<BulletInterface>();
+            var Bullet4Interface = Bullet4.GetComponent<BulletInterface>();
+            Bullet1Interface.EnemyBullet = true;
+            Bullet2Interface.EnemyBullet = true;
+            Bullet3Interface.EnemyBullet = true;
+            Bullet4Interface.EnemyBullet = true;
+            Bullet1Interface.Velocity = BulletSpeed;
+            Bullet2Interface.Velocity = BulletSpeed;
+            Bullet3Interface.Velocity = BulletSpeed;
+            Bullet4Interface.Velocity = BulletSpeed;   
+            AltFire = true;
+        } else
+        {
+
+            var Bullet1 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 0f + 45f));
+            var Bullet2 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 90f + 45f));
+            var Bullet3 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, 180f + 45f));
+            var Bullet4 = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, -90f + 45f)); //this code is PISSING ME OFF, im the oringal      Bullet walker
+
+            var Bullet1Interface = Bullet1.GetComponent<BulletInterface>();
+            var Bullet2Interface = Bullet2.GetComponent<BulletInterface>();
+            var Bullet3Interface = Bullet3.GetComponent<BulletInterface>();
+            var Bullet4Interface = Bullet4.GetComponent<BulletInterface>();
+            Bullet1Interface.EnemyBullet = true;
+            Bullet2Interface.EnemyBullet = true;
+            Bullet3Interface.EnemyBullet = true;
+            Bullet4Interface.EnemyBullet = true;
+            Bullet1Interface.Velocity = BulletSpeed;
+            Bullet2Interface.Velocity = BulletSpeed;
+            Bullet3Interface.Velocity = BulletSpeed;
+            Bullet4Interface.Velocity = BulletSpeed;  
+            
+            AltFire = false;
+        }
         
     }
 

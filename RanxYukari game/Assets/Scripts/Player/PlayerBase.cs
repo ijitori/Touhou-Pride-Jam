@@ -11,9 +11,9 @@ public class PlayerBase : MonoBehaviour
     int MaxHP;
     
     [SerializeField] GameObject DeathUI;
-    [SerializeField]
-    TMP_Text Display;
+    [SerializeField] TMP_Text Display;
     [SerializeField] float IFrameTime;
+    [SerializeField] SpriteRenderer Renderer;
     public UnityEvent<string> DeathEventCall; //Called Whenever the player dies to clean up everything 
 
 
@@ -37,13 +37,14 @@ public class PlayerBase : MonoBehaviour
     {
         if(Immortal==false)
         {
-        StartCoroutine("IFrames");
+            Renderer.color = new Color(1f,1f,1f, 0.5f);
+            StartCoroutine("IFrames");
 
-        HP -= damage;
-        if(HP == 0)
-        {
-            DeathEventCall.Invoke("Death"); //Calls the death event in all functions
-        }
+            HP -= damage;
+            if(HP == 0)
+            {
+                DeathEventCall.Invoke("Death"); //Calls the death event in all functions
+            }
         }
     }
 
@@ -56,6 +57,7 @@ public class PlayerBase : MonoBehaviour
             yield return null;
         }
         Immortal = false;
+        Renderer.color = new Color(1f,1f,1f, 1f);
     }
 
     public void Die(string Massage)

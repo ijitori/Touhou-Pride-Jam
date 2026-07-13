@@ -41,7 +41,7 @@ public class BossBase : MonoBehaviour, EnemyHitInterface
                 Display.text = "Boss Health: " +  EnemyHp;
             } else
             {
-                Display.text = "";
+                Display.text = "Time out!";
             }
         
         }

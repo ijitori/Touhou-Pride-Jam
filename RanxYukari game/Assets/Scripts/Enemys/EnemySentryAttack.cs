@@ -6,7 +6,7 @@ public class EnemySentryAttack : MonoBehaviour
     [SerializeField] GameObject BulletToFire;
     [SerializeField] float FireCoolDown;
     [SerializeField] float BulletSpeed;
-    float FireTimer;
+    [SerializeField] float FireTimer;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");

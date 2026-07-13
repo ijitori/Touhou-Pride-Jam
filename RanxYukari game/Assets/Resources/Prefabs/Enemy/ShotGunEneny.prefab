@@ -169,3 +169,4 @@ MonoBehaviour:
   BulletToFire: {fileID: 1440202794041544975, guid: cd7e3f5a2cb620942baeb4bab2b9ad19, type: 3}
   FireCoolDown: 0.66
   BulletSpeed: 22.28
+  FireTimer: 0.5
