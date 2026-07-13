@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 using TMPro;
 using NUnit.Framework;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 //Manage the UI and dialog relating to UI. By rat queen
 public class DialogMaster : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class DialogMaster : MonoBehaviour
     PlayerMovement PlayerMovement;
 
     Wavespawner Wavespawner;
+    SFXEmitter SFXEmitter;
+    public AudioResource UISFX;
 
     private void OnDisable()
     {
@@ -41,6 +44,7 @@ public class DialogMaster : MonoBehaviour
     void Start()
     {
         Ui.SetActive(false); //Set UI to false if its active.
+        SFXEmitter = this.gameObject.GetComponent<SFXEmitter>();
 
         if(IsEnding == false && IsProlog == false)
         {
@@ -79,6 +83,8 @@ public class DialogMaster : MonoBehaviour
         
         PortaritLeft.sprite = TreePlacement.PortaritLeft;
         PortaritRight.sprite = TreePlacement.PortaritRight;
+        Debug.Log(ContentText.color);
+        Debug.Log(TreePlacement.DialogCharacterTheme.TextColor);
         ContentText.color = TreePlacement.DialogCharacterTheme.TextColor;
 
         if (TreePlacement.OnTheLeft)
@@ -90,7 +96,7 @@ public class DialogMaster : MonoBehaviour
         {
             PortaritLeft.color = new Color(0.4f, 0.4f, 0.4f);
             PortaritRight.color = new Color(1f, 1f, 1f);
-            ContentText.text += "<align=right>";
+            //ContentText.text += "<align=right>";
         }
 
         ContentText.text = ""; //Rest text
@@ -101,11 +107,15 @@ public class DialogMaster : MonoBehaviour
     {
         if(Ui.active) //check if the dialog is active to make sure this isnt being called when the UI isnt there.
         {
+            SFXEmitter.CreateOneTimeSFX(UISFX);
             DialogTreeListPlacement += 1;
             ContentText.text = ""; //Rest text
+            
             if(CurrentDialogTree.DialogList.Count - 1 >= DialogTreeListPlacement )
             {
                 var TreePlacement = CurrentDialogTree.DialogList[DialogTreeListPlacement];
+
+                ContentText.color = TreePlacement.DialogCharacterTheme.TextColor;
 
                 if (TreePlacement.OnTheLeft)
                 {
@@ -116,11 +126,12 @@ public class DialogMaster : MonoBehaviour
                 {
                     PortaritLeft.color = new Color(0.4f, 0.4f, 0.4f);
                     PortaritRight.color = new Color(1f, 1f, 1f);
-                    ContentText.text += "<align=right>";
+                    //ContentText.text += "<align=right>";
                 }
         
                 PortaritLeft.sprite = TreePlacement.PortaritLeft;
                 PortaritRight.sprite = TreePlacement.PortaritRight;
+                StopAllCoroutines();
                 StartCoroutine(WriteText(TreePlacement.Dialog));
             }   else
             {

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 //Shoots it in a circle like her non spell 
 public class BossAttackTest : MonoBehaviour
 {
@@ -13,12 +14,15 @@ public class BossAttackTest : MonoBehaviour
     float InternalOrbTimer;
     BossBase BossBase;
     GameObject Player;
+    SFXEmitter SFXEmitter;
+    public AudioResource FireSound;
     void OnEnable()
     {
         Debug.Log("Im starting attack");
         Player = GameObject.FindGameObjectWithTag("Player");
         BulletToFire = Resources.Load<GameObject>("Prefabs/Enemy/Enemy Bullet") as GameObject;
         BossBase = this.GetComponent<BossBase>();
+        SFXEmitter = this.gameObject.GetComponent<SFXEmitter>();
     }
 
     
@@ -50,7 +54,7 @@ public class BossAttackTest : MonoBehaviour
         {
             var ReltivePos = (Player.transform.position) - this.transform.position;
             float rot_z = Mathf.Atan2(ReltivePos.y, ReltivePos.x) * Mathf.Rad2Deg;
-
+            SFXEmitter.CreateOneTimeSFX(FireSound);
             var OrbBullet = Instantiate(BulletToFire, transform.position, Quaternion.identity);
             OrbBullet.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
             OrbBullet.GetComponent<BulletInterface>().Velocity = 30;

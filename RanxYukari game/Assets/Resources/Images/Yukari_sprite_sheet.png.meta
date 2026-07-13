@@ -1,0 +1,978 @@
+fileFormatVersion: 2
+guid: 058a9de5618692546851314d14ba38de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5522366917127876498
+    second: Yukari_sprite_sheet_0
+  - first:
+      213: -2115282692821642965
+    second: Yukari_sprite_sheet_1
+  - first:
+      213: -3127955973574677526
+    second: Yukari_sprite_sheet_2
+  - first:
+      213: -937306980292717581
+    second: Yukari_sprite_sheet_3
+  - first:
+      213: 6652828153079176658
+    second: Yukari_sprite_sheet_4
+  - first:
+      213: 5576577275052418807
+    second: Yukari_sprite_sheet_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4655
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fa6cec37363ac40800000000000000
+      internalID: 5522366917127876498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 4655
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27f8fe1634c6a241992a7ec62601e84
+      internalID: -2115282692821642965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 4655
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b18080087e589e48bc5a034a2ea2b9f
+      internalID: -3127955973574677526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 4655
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee378fd2b33343f449c459c16eba7fd2
+      internalID: -937306980292717581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 4655
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dbd7f32d0a3964ca3835cc6dfc97e8
+      internalID: 6652828153079176658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 4655
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81715062a7b4294592b32e8134575f4
+      internalID: 5576577275052418807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3724
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689d64ed895b1c341bdbbaf204c656ed
+      internalID: -24176157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 3724
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e6d6dc9e9254843a8e4918d4000a86
+      internalID: -1356191189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 3724
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789f82bafe59aac4d82eecfd92e56d69
+      internalID: 83037244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 3724
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9810668559f20854b800d75c51a80fde
+      internalID: -1596292230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 3724
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502d0105fc150154b9b72b8e51e6e440
+      internalID: 94737884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 3724
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b5f3f83bcca6844802669c49ceb34a
+      internalID: -1161104590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2793
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211356dbc496cb94394f3da7051f9359
+      internalID: -210158839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2793
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765b184ea84180a44a8f3d754f659c14
+      internalID: -920390671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 2793
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55caa62a8c1d3bb4ca1271579ace34c2
+      internalID: -1408338052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 2793
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53ae29c6c2d5f6488714f07ceb9209c
+      internalID: -2028734460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 2793
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013873bb0b001ab4ca1035b4f92da3e9
+      internalID: -2031496893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 2793
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef7794e1cc35be40a3c4e077e754677
+      internalID: 1469795382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1862
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d731748f2a2c346abb509f77d9e5ad
+      internalID: -1450621543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1862
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c14962939e69124a8530c7a595240f2
+      internalID: 989995330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1862
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dc2bb9b765fd64390ab996453fe26e
+      internalID: -475124063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1862
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac7173c41228f74da8d65589d9a653a
+      internalID: -976326832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1862
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28093cbf8e1fcb84e88e10af0f9e3129
+      internalID: -1436659580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 1862
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498a9d7b3ed8c06468b87ec2f14f1c88
+      internalID: 1273738886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 931
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184c84f9882308b4290c1ea7551c0d13
+      internalID: 1451620962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 931
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97abb8da7377b4e459eee6cfe1b94e14
+      internalID: 87410285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 931
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbf798dc423a32488f95013bbbd8fa3
+      internalID: 135136787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 931
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e59b8dbc3a09ee4c92ea2ae9939c256
+      internalID: -892654221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 931
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1705f1af7a2e8874c9dacd509e57d44c
+      internalID: -1567944929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 931
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b792cf93614c37e42a51c972ed8be17d
+      internalID: -1987291371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524ff42955e78da4387487c6afa50e1a
+      internalID: 2048808577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b98d01fc11b7064d804a46e4cc7fd35
+      internalID: 957206241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 0
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7a87602449de8498302b5280408365
+      internalID: -855362845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 0
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285fbd5c150d0fc4695b97d02a0b90e6
+      internalID: 1564520359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 0
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518bc37dc341ba947bc40f3f741f9906
+      internalID: -1700623199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yukari_sprite_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 0
+        width: 639
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d0e182fe5bf0f4589f8d734f317a67
+      internalID: 1751575662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a2fbbc5cde2494747a54da78aca1de5f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":639.0,"y":931.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Yukari_sprite_sheet_0: 5522366917127876498
+      Yukari_sprite_sheet_1: -2115282692821642965
+      Yukari_sprite_sheet_10: 94737884
+      Yukari_sprite_sheet_11: -1161104590
+      Yukari_sprite_sheet_12: -210158839
+      Yukari_sprite_sheet_13: -920390671
+      Yukari_sprite_sheet_14: -1408338052
+      Yukari_sprite_sheet_15: -2028734460
+      Yukari_sprite_sheet_16: -2031496893
+      Yukari_sprite_sheet_17: 1469795382
+      Yukari_sprite_sheet_18: -1450621543
+      Yukari_sprite_sheet_19: 989995330
+      Yukari_sprite_sheet_2: -3127955973574677526
+      Yukari_sprite_sheet_20: -475124063
+      Yukari_sprite_sheet_21: -976326832
+      Yukari_sprite_sheet_22: -1436659580
+      Yukari_sprite_sheet_23: 1273738886
+      Yukari_sprite_sheet_24: 1451620962
+      Yukari_sprite_sheet_25: 87410285
+      Yukari_sprite_sheet_26: 135136787
+      Yukari_sprite_sheet_27: -892654221
+      Yukari_sprite_sheet_28: -1567944929
+      Yukari_sprite_sheet_29: -1987291371
+      Yukari_sprite_sheet_3: -937306980292717581
+      Yukari_sprite_sheet_30: 2048808577
+      Yukari_sprite_sheet_31: 957206241
+      Yukari_sprite_sheet_32: -855362845
+      Yukari_sprite_sheet_33: 1564520359
+      Yukari_sprite_sheet_34: -1700623199
+      Yukari_sprite_sheet_35: 1751575662
+      Yukari_sprite_sheet_4: 6652828153079176658
+      Yukari_sprite_sheet_5: 5576577275052418807
+      Yukari_sprite_sheet_6: -24176157
+      Yukari_sprite_sheet_7: -1356191189
+      Yukari_sprite_sheet_8: 83037244
+      Yukari_sprite_sheet_9: -1596292230
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

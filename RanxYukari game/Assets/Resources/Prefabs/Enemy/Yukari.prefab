@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4376648777427678043}
   - component: {fileID: -2631978921969366673}
   - component: {fileID: -7103278502520454701}
+  - component: {fileID: 7699994331876256400}
   m_Layer: 6
   m_Name: Yukari
   m_TagString: Untagged
@@ -163,6 +164,7 @@ MonoBehaviour:
   NormalBulletSprite: {fileID: 8470659122807649293, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
   SlowBulletSprite: {fileID: 2157313641416058187, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
   OrbSprite: {fileID: -8771932511996877764, guid: 058e6dad5dad6664d94931f391736ffa, type: 3}
+  FireSound: {fileID: 8300000, guid: 5f8a8edcdb784354fa41be8e21da9c2d, type: 3}
 --- !u!114 &7933926919751278796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +185,8 @@ MonoBehaviour:
   Stream2Sprite: {fileID: 8470659122807649293, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
   Stream3Sprite: {fileID: 8470659122807649293, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
   Stream4Sprite: {fileID: 8470659122807649293, guid: 64b0b766bfbd93f42aa196994ef3be58, type: 3}
+  InternalTimer: 0
+  FireSound: {fileID: 8300000, guid: 1dfc3fd1aa81aa3479d73a8e71884193, type: 3}
 --- !u!114 &7940045251522776338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,3 +537,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &7699994331876256400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670078799847007404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9987d20f5ded9f4bb6775bf09489693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXEmitter
