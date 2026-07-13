@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 //yukari and her trains. code by rat queen
 public class YukariAttackTrain : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class YukariAttackTrain : MonoBehaviour
     [SerializeField]  int ChangeRotationAmount;
     BossBase BossBase;
     GameObject Player;
+    SFXEmitter SFXEmitter;
+    public AudioResource FireSound;
     void Start()
     {
         TrainTime = TrainCoolDown;
@@ -65,6 +68,7 @@ public class YukariAttackTrain : MonoBehaviour
             
             if(TrainTime <= -0.5f)
             {
+                SFXEmitter.CreateOneTimeSFX(FireSound);
                 var Train = Instantiate(TrainObject, transform.position, TrainWarning.transform.rotation);
                 var ReltivePos = (this.transform.position - Player.transform.position);
                 float rotR_z = Mathf.Atan2(ReltivePos.y, ReltivePos.x) * Mathf.Rad2Deg;

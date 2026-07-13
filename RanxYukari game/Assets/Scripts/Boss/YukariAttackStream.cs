@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.Audio;
 public class YukariAttackStream : MonoBehaviour
 {
     [SerializeField] GameObject BulletToFire;
@@ -10,14 +10,18 @@ public class YukariAttackStream : MonoBehaviour
     [SerializeField] Sprite Stream2Sprite;
     [SerializeField] Sprite Stream3Sprite;
     [SerializeField] Sprite Stream4Sprite;
+    [SerializeField] 
     float InternalTimer;
     float MoveInternalTimer;
     GameObject Player;
     BossBase BossBase;
+    SFXEmitter SFXEmitter;
+    public AudioResource FireSound;
 
     void OnEnable()
     {
         Debug.Log("Im starting attack");
+        SFXEmitter = this.gameObject.GetComponent<SFXEmitter>();
         Player = GameObject.FindGameObjectWithTag("Player");
         BulletToFire = Resources.Load<GameObject>("Prefabs/Enemy/Enemy Bullet") as GameObject;
         BossBase = this.GetComponent<BossBase>();
@@ -91,7 +95,7 @@ public class YukariAttackStream : MonoBehaviour
     {
         transform.position = Random.insideUnitCircle * 5;
         var RanFloat = Random.Range(-50.0f, 50.0f); //Ran! like the player!
-
+        SFXEmitter.CreateOneTimeSFX(FireSound);
         for(int i = 0; i <= 8; i++)
         {
             var SlowBullet = Instantiate(BulletToFire, transform.position, Quaternion.Euler(0f, 0f, RanFloat + (i * (80))));

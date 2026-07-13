@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 39916114}
   - component: {fileID: 39916113}
   - component: {fileID: 39916112}
+  - component: {fileID: 39916117}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -329,6 +330,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 39916117}
+        m_TargetAssemblyTypeName: SFXEmitter, Assembly-CSharp
+        m_MethodName: CreateOneTimeSFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 462f72fdcb915154ba36d69ec78c56bf, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Audio.AudioResource, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &39916115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,6 +380,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39916110}
   m_CullTransparentMesh: 1
+--- !u!114 &39916117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39916110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9987d20f5ded9f4bb6775bf09489693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXEmitter
 --- !u!1 &54481971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,6 +1544,7 @@ GameObject:
   - component: {fileID: 233490744}
   - component: {fileID: 233490748}
   - component: {fileID: 233490747}
+  - component: {fileID: 233490749}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -1614,6 +1640,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 233490749}
+        m_TargetAssemblyTypeName: SFXEmitter, Assembly-CSharp
+        m_MethodName: CreateOneTimeSFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 9dfafb7da7eaef04a893547c7b91ef75, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Audio.AudioResource, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &233490745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1678,6 +1716,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OnclickEnable
   ThingToThisAble: {fileID: 838560852}
+--- !u!114 &233490749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233490742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9987d20f5ded9f4bb6775bf09489693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXEmitter
 --- !u!1 &281576358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,7 +2277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f17f056939f907418a9b77c7a80ffe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PressPlay
-  MenuSong: {fileID: 0}
+  MenuSong: {fileID: 8300000, guid: d480a991455fa1d40b0d16c01dfaad62, type: 3}
   StageSong: {fileID: 0}
   Fader: {fileID: 422304022}
 --- !u!225 &422304024
@@ -4086,7 +4136,7 @@ AudioSource:
   m_GameObject: {fileID: 1181239550}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4341883926256433700, guid: 5903271289bbfaa4abe716974324a589, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
@@ -4486,6 +4536,7 @@ GameObject:
   - component: {fileID: 1257298731}
   - component: {fileID: 1257298730}
   - component: {fileID: 1257298729}
+  - component: {fileID: 1257298733}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -4569,6 +4620,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1257298733}
+        m_TargetAssemblyTypeName: SFXEmitter, Assembly-CSharp
+        m_MethodName: CreateOneTimeSFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: e3b7a57dddff2eb4cb0c9905b870728d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Audio.AudioResource, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1257298730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4619,6 +4682,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257298727}
   m_CullTransparentMesh: 1
+--- !u!114 &1257298733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257298727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9987d20f5ded9f4bb6775bf09489693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXEmitter
 --- !u!1 &1259415337
 GameObject:
   m_ObjectHideFlags: 0
@@ -4802,7 +4877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cryochol - Music and writing
+  m_text: Cryochol - Music, SFX and writing
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5757,6 +5832,7 @@ GameObject:
   - component: {fileID: 1677334516}
   - component: {fileID: 1677334515}
   - component: {fileID: 1677334514}
+  - component: {fileID: 1677334519}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -5852,6 +5928,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1677334519}
+        m_TargetAssemblyTypeName: SFXEmitter, Assembly-CSharp
+        m_MethodName: CreateOneTimeSFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a02e7f45867d9b145acc25313527de9d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Audio.AudioResource, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1677334515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5916,6 +6004,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677334512}
   m_CullTransparentMesh: 1
+--- !u!114 &1677334519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677334512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9987d20f5ded9f4bb6775bf09489693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXEmitter
 --- !u!1 &1719077930
 GameObject:
   m_ObjectHideFlags: 0
@@ -6005,6 +6105,7 @@ GameObject:
   - component: {fileID: 1746533857}
   - component: {fileID: 1746533856}
   - component: {fileID: 1746533855}
+  - component: {fileID: 1746533860}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -6126,6 +6227,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1746533860}
+        m_TargetAssemblyTypeName: SFXEmitter, Assembly-CSharp
+        m_MethodName: CreateOneTimeSFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a02e7f45867d9b145acc25313527de9d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Audio.AudioResource, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1746533858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6164,6 +6277,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746533853}
   m_CullTransparentMesh: 1
+--- !u!114 &1746533860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746533853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9987d20f5ded9f4bb6775bf09489693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXEmitter
 --- !u!1 &1750471036
 GameObject:
   m_ObjectHideFlags: 0
@@ -7208,6 +7333,7 @@ GameObject:
   - component: {fileID: 1980515809}
   - component: {fileID: 1980515812}
   - component: {fileID: 1980515811}
+  - component: {fileID: 1980515813}
   - component: {fileID: 1980515810}
   m_Layer: 5
   m_Name: Play
@@ -7292,6 +7418,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1980515813}
+        m_TargetAssemblyTypeName: SFXEmitter, Assembly-CSharp
+        m_MethodName: CreateOneTimeSFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: e3b7a57dddff2eb4cb0c9905b870728d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Audio.AudioResource, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1980515811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7330,6 +7468,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980515808}
   m_CullTransparentMesh: 1
+--- !u!114 &1980515813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980515808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9987d20f5ded9f4bb6775bf09489693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXEmitter
 --- !u!1 &2016634055
 GameObject:
   m_ObjectHideFlags: 0
@@ -7577,7 +7727,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &2049646491
 GameObject:
   m_ObjectHideFlags: 0

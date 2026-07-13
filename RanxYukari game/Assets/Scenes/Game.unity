@@ -1270,6 +1270,7 @@ GameObject:
   - component: {fileID: 581968733}
   - component: {fileID: 581968735}
   - component: {fileID: 581968734}
+  - component: {fileID: 581968737}
   - component: {fileID: 581968736}
   m_Layer: 0
   m_Name: GameMaster
@@ -1329,6 +1330,8 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   IsEnding: 0
+  IsProlog: 0
+  UISFX: {fileID: 8300000, guid: e3b7a57dddff2eb4cb0c9905b870728d, type: 3}
 --- !u!114 &581968735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,8 +1356,26 @@ MonoBehaviour:
     EnemyObject: {fileID: 8782380188397274460, guid: 35df2a85223386044afda8b040e46df7, type: 3}
   EnemysSpawned: []
   WaveDialogList:
-  - WaveDialogTree: {fileID: 11400000, guid: f5f67cab21c237445bdb52def5379217, type: 2}
+  - WaveDialogTree: {fileID: 11400000, guid: 32211bdc31ab5c64db8cf2488c9c517d, type: 2}
     WaveStartOn: 1
+  - WaveDialogTree: {fileID: 11400000, guid: 125c272d3148a284cb3585fdd0bf723e, type: 2}
+    WaveStartOn: 2
+  - WaveDialogTree: {fileID: 11400000, guid: 4a4e5661f74c351489620f76e6b101a5, type: 2}
+    WaveStartOn: 3
+  - WaveDialogTree: {fileID: 11400000, guid: e917aff0c6325a341a913dec0973c793, type: 2}
+    WaveStartOn: 4
+  - WaveDialogTree: {fileID: 11400000, guid: dd88924a4412d93498ff11c208c9d007, type: 2}
+    WaveStartOn: 5
+  - WaveDialogTree: {fileID: 11400000, guid: 03a82657da223174cba711ec703d62a7, type: 2}
+    WaveStartOn: 6
+  - WaveDialogTree: {fileID: 11400000, guid: 408ca654f78be1b46bead2f0fbdd6028, type: 2}
+    WaveStartOn: 7
+  - WaveDialogTree: {fileID: 11400000, guid: 358c8b57d0a077c41add2798418fe22e, type: 2}
+    WaveStartOn: 8
+  - WaveDialogTree: {fileID: 11400000, guid: ce09327ee5237c84c8d1e7dc9691ca5c, type: 2}
+    WaveStartOn: 9
+  - WaveDialogTree: {fileID: 11400000, guid: 1b45b814030c4d64d9695abdf17ab712, type: 2}
+    WaveStartOn: 10
   WaveModifierList:
   - WaveStartOn: 10
     IsBossWave: 1
@@ -1381,6 +1402,18 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 8568a4186c1a0b44da683274f22aa355, type: 2}
+--- !u!114 &581968737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581968732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9987d20f5ded9f4bb6775bf09489693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXEmitter
 --- !u!1 &601844971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,7 +2109,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 547, y: 161.65}
-  m_SizeDelta: {x: 625.4, y: 756.7}
+  m_SizeDelta: {x: 531.9861, y: 756.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663943861
 MonoBehaviour:
@@ -2098,7 +2131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  m_Sprite: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
