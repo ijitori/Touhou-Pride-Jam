@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 TargetPos; //Where the object is going.
 
     public bool IsFocused;
+    public bool AnimationRest;
     bool CollidingWithBordar;
 
     GameObject DashAfterImage;
@@ -118,6 +119,7 @@ public class PlayerMovement : MonoBehaviour
             Animator.SetBool("IsMoving", true);
             TargetPos += new Vector3(MoveDir.x * MoveSpeed, MoveDir.y * MoveSpeed, 0); 
             var NewPos = new Vector3(MoveDir.x * MoveSpeed, MoveDir.y * MoveSpeed, 0);  
+            AnimationRest = true;
 
             if(PlayerAttacking.AutoFire == false)
             {
@@ -129,8 +131,14 @@ public class PlayerMovement : MonoBehaviour
             transform.position += NewPos;
         } else
         {
+            if(AnimationRest == true)
+            {
+                Animator.Play("Idle", -1, 1.1f);
+                AnimationRest = false;    
+            }
             
             Animator.SetBool("IsMoving", false);
+            
             TargetPos = transform.position; //Rest Target Pos after we stop moving.
         }
 
