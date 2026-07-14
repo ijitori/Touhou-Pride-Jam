@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ce6b5638fa90941a467855961477c9, type: 3}
-  m_Name: YukariTheme
-  m_EditorClassIdentifier: Assembly-CSharp::DialogCharacterTheme
-  TextColor: {r: 0.6953899, g: 0.3973834, b: 0.8867924, a: 1}
+  m_Script: {fileID: 11500000, guid: d64f85ba82d8a50469ee4d29937573fa, type: 3}
+  m_Name: Wave 11 (yukari boss fight)
+  m_EditorClassIdentifier: Assembly-CSharp::DialogTree
+  DialogList: []

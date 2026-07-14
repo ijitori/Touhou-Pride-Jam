@@ -79,17 +79,6 @@ MonoBehaviour:
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
     PortaritLeft: {fileID: -3232062083690371700, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
     PortaritRight: {fileID: 83037244, guid: 058a9de5618692546851314d14ba38de, type: 3}
-  - Dialog: 'I like the ambience. '
-    OnTheLeft: 0
-    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
-    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: -2028734460, guid: 058a9de5618692546851314d14ba38de, type: 3}
-  - Dialog: "You would be the only person in or out of Hell to ever say that. If
-      it\u2019s even true. "
-    OnTheLeft: 1
-    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: -2028734460, guid: 058a9de5618692546851314d14ba38de, type: 3}
   - Dialog: 'Oh, my. An accusation? Is my fluffy little detective onto something? '
     OnTheLeft: 0
     DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}

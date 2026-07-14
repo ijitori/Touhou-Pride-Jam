@@ -13,14 +13,42 @@ MonoBehaviour:
   m_Name: Wave 7
   m_EditorClassIdentifier: Assembly-CSharp::DialogTree
   DialogList:
-  - Dialog: "Ugh\u2026 this is a mess. What kind of idiot tries to bait souls to
-      the rooftop? Hardly what I\u2019d consider the ideal dining spot. "
-    OnTheLeft: 1
-    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+  - Dialog: "Have I told you how incredible you are, Ran? All those spells, yet you\u2019ve
+      hardly worked up a sweat."
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
     PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
-  - Dialog: "Of course, it has to be over my apartment, too\u2026 "
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Maybe if any of these creatures were a challenge\u2026 If you\u2019re
+      trying to test me, this is hardly scientific. Or do you think of this as a
+      control group?"
     OnTheLeft: 1
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
     PortaritLeft: {fileID: -327401834422631593, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
+    PortaritRight: {fileID: 83037244, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Do you think this is a test? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -327401834422631593, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Whatever this is, it\u2019s making your previous flattery feel backhanded. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 1828699359223034863, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -937306980292717581, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: ...
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 1828699359223034863, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -937306980292717581, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "You\u2019re even cuter when you\u2019re angry. Maybe I should waste
+      some more of your time? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 1828699359223034863, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -920390671, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "W-wait, don\u2019t you dare-- "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 2385674708959976505, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}

@@ -13,14 +13,140 @@ MonoBehaviour:
   m_Name: Wave 6
   m_EditorClassIdentifier: Assembly-CSharp::DialogTree
   DialogList:
-  - Dialog: "Ugh\u2026 this is a mess. What kind of idiot tries to bait souls to
-      the rooftop? Hardly what I\u2019d consider the ideal dining spot. "
+  - Dialog: "S-so\u2026 you really have nothing more important to attend to in Gensokyo? "
     OnTheLeft: 1
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
-  - Dialog: "Of course, it has to be over my apartment, too\u2026 "
+    PortaritLeft: {fileID: 1179189952156078133, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Nothing more important than being here, no~ '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 1179189952156078133, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026That still sounds like you have something else in mind. I still
+      don\u2019t believe this is a coincidence. "
     OnTheLeft: 1
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: -327401834422631593, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
+    PortaritLeft: {fileID: -5143451010721637198, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Is this another instance where you\u2019re asking me to be honest? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -5143451010721637198, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: Obviously.
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Ugh, you\u2019re lucky you\u2019re cute when you\u2019re insistent.
+      I\u2019ve already worked you up a good bit. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 1295570322389560635, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 94737884, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "What\u2019s that supposed to mean?! "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 1295570322389560635, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 94737884, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Let me be clear. My presence here is significant, but it isn\u2019t
+      the fate of the world at stake. It\u2019s something else entirely, but just
+      as important to me. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 1295570322389560635, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 83037244, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Can you just get to the point?  '
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 1828699359223034863, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 83037244, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'The point? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 1828699359223034863, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -1596292230, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: Im looking at her.
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 1828699359223034863, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -920390671, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: ?!
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 1828699359223034863, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: Does that mean all these spirits attacking me have been you?
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 1828699359223034863, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: 'And why no one else has come to investigate, yes! '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 1828699359223034863, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5143451010721637198, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "This all pertains to what I\u2019d like to discuss with you. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -5143451010721637198, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026Yakumo, are you crazy? "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 1179189952156078133, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -24176157, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Depends on who you ask. None of them relevant. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 1179189952156078133, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "You couldn\u2019t just speak to me normally? How could attacking me
+      with violent spirits possibly be productive? "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 1179189952156078133, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "And do you know how sick you\u2019ve made me, thinking you\u2019ve been
+      in harm\u2019s way this entire time, when it was you this whole time?! "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026! "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 1273738886, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Um\u2026 Perhaps \u201Cdiscuss\u201D was the wrong word?  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 1273738886, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Ran. You are one of the most brilliant minds this wretched domain has
+      ever produced--  in spite of your circumstances, for the most part. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 1273738886, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Use that mind for a moment. What do you think I\u2019m here for, then?  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -1436659580, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: ...
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -1436659580, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: ...
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -1436659580, guid: 058a9de5618692546851314d14ba38de, type: 3}
