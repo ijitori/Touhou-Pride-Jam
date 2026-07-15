@@ -13,14 +13,97 @@ MonoBehaviour:
   m_Name: Wave 8
   m_EditorClassIdentifier: Assembly-CSharp::DialogTree
   DialogList:
-  - Dialog: "Ugh\u2026 this is a mess. What kind of idiot tries to bait souls to
-      the rooftop? Hardly what I\u2019d consider the ideal dining spot. "
+  - Dialog: 'This is stupid. '
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Not from where I\u2019m standing, darling~ I\u2019ve been having the
+      time of my life. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -327401834422631593, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 83037244, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "This isn\u2019t achieving anything! No matter how many of these little
+      spirits you throw at me, I\u2019m worth more than all of them combined.  "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 4631728597453588502, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 83037244, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: I agree!
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 4631728597453588502, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026?! "
     OnTheLeft: 1
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
     PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
-  - Dialog: "Of course, it has to be over my apartment, too\u2026 "
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Isn\u2019t the repetition just boring? Wouldn\u2019t you just love to
+      take on some real challenges, without anyone to stop you?"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Without anyone\u2026 like those pesky yakuza? Like your miserable neighbors?
+      Without any of these beasts holding you down for their own gain?"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Of course I would! '
     OnTheLeft: 1
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: -327401834422631593, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
+    PortaritLeft: {fileID: -7075415303241466695, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Are you frustrated enough to claw your way out, bare hands or otherwise? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7075415303241466695, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: Of course I am!
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7075415303241466695, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Good, because I want that for you just as much. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7075415303241466695, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "I-I\u2026 Apologize\u2026 For sincerely worrying you. So confident in
+      my own plan I was, that I didn\u2019t realize that you could possibly fret
+      over me so anxiously."
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7075415303241466695, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -1436659580, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "I hope, however, that puts something into perspective for you. How sick
+      I\u2019ve been of watching your potential waste away in an environment like
+      this.  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7075415303241466695, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -937306980292717581, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Do you think you can keep tolerating this place? Do you think it\u2019s
+      worth it? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7075415303241466695, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "I\u2019ve never once thought that.  "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -9094561132676185518, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'So why are you still here? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -9094561132676185518, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -2115282692821642965, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -2115282692821642965, guid: 058a9de5618692546851314d14ba38de, type: 3}

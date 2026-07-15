@@ -13,8 +13,272 @@ MonoBehaviour:
   m_Name: Ending
   m_EditorClassIdentifier: Assembly-CSharp::DialogTree
   DialogList:
-  - Dialog: This is the end, we dont have any assets
+  - Dialog: "\u2026 When I looked down at the residential buildings below me, I swore
+      I could see my now-former neighbors staring up at me. "
     OnTheLeft: 0
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
     PortaritLeft: {fileID: 0}
     PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: "In awe? Admiration? Fear? \u2026Envy? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: "I couldn\u2019t tell. With my hand in Yukari\u2019s, I\u2026 didn\u2019t
+      care. I wasn\u2019t afraid of them anymore, or the ones that ruled them. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: "I haven\u2019t left her side since that day. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: "\u2026\u2026\u2026\u2026\u2026\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: "What\u2019s with that face? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: "Um\u2026 That sounded\u2026 way cooler than I thought it would. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: "When you said all that stuff about doing things we don\u2019t wanna,
+      I expected Yukari-sama to be um\u2026  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: "Not\u2026 that."
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: "What\u2019s that supposed to mean?! I tolerated ten waves of small fry
+      and a boss fight to stay by her side and become her shikigami! "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -2008345500446539537, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+  - Dialog: 'It was awful. I wanted to tear my hair out! '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'Okay, yeah, sure, that sounds annoying and it was probably super frustrating,
+      and all. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "But what about all that other stuff? You didn\u2019t say any of that
+      junk to me. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'Well, you were different.  '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "Yeah, I didn\u2019t wanna be a huge loser anymore and wanted to run
+      my own place.  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "You\u2019re\u2026 maybe giving yourself less credit by paraphrasing
+      that, but yes, and that is different from the hundreds of years of suffocation
+      I experienced in the Animal Realm. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "I guess, but\u2026 She could\u2019ve just said \u201CHey, be my shikigami
+      and let\u2019s get the hell outta here."
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "That\u2019s true, I could have!  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'WOAH! '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'I told you not to scare her like that anymore. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "Sorry! I just couldn\u2019t help join in on the reminiscing.  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'You tell it much better, Ran. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "Well, I just\u2026 remember it fondly. There\u2019s plenty for me to
+      tell. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'Ew. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'Oh! '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "Chen! What\u2019s gotten into you? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "See? This is what I mean! You don\u2019t talk like that to me at all,
+      and I\u2019m your shikigami. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'Oh, goodness, Ran. Neglecting your new apprentice already?! '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'As if.  '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "I don\u2019t think what you two have going on is a shikigami thing.
+      You talk like you\u2019re married and stuff. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026! "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026Guys? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026Guys? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026A\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026Are\u2026 we\u2026? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "Oh you two are like... Serious\u2026\u2026\u2026. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "Erm. Well! That\u2019s enough storytime for today.  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "Thank you for coming by as always, Chen. Please remember to\u2026 to
+      practice. Like I told you.  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'Yes! It was, um. Nice seeing you! '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "Uh\u2026 Sure. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "I\u2019m uh\u2026 Yeah. I\u2019m gonna\u2026 like\u2026 go. Now.  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 7a832a9e7fed8fa49a98b4b11b8c66db, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: 'Y-yes, goodbye, dear Chen. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026\u2026\u2026\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: "\u2026So are we going to talk about that? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}
+  - Dialog: END - thanks for playing!
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 0}
+    PortaritRight: {fileID: -6120023263723227101, guid: cd983dff64b067b4282507d10e56493a, type: 3}

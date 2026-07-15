@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: -2631978921969366673}
   - component: {fileID: -7103278502520454701}
   - component: {fileID: 7699994331876256400}
+  - component: {fileID: 4104056226969962556}
   m_Layer: 6
   m_Name: Yukari
   m_TagString: Untagged
@@ -368,6 +369,7 @@ MonoBehaviour:
   BulletSpeed: 20
   TrainWarningSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   ChangeRotationAmount: 0
+  FireSound: {fileID: 0}
 --- !u!114 &4376648777427678043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,3 +551,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9987d20f5ded9f4bb6775bf09489693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SFXEmitter
+--- !u!114 &4104056226969962556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670078799847007404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e648d364c279f414fb4e1dd9b570858d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaySongOnStart
+  Song: {fileID: 8300000, guid: 242f2e3a2759870458856bdd1c4a114e, type: 3}

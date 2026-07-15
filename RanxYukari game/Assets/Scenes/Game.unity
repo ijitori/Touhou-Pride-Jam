@@ -1410,12 +1410,14 @@ MonoBehaviour:
     WaveStartOn: 9
   - WaveDialogTree: {fileID: 11400000, guid: 1b45b814030c4d64d9695abdf17ab712, type: 2}
     WaveStartOn: 10
+  - WaveDialogTree: {fileID: 11400000, guid: 48c918d5af39b5b4a85ea6bf010e4a7b, type: 2}
+    WaveStartOn: 11
   WaveModifierList:
-  - WaveStartOn: 10
+  - WaveStartOn: 11
     IsBossWave: 1
     BossToSpawn: {fileID: 3670078799847007404, guid: b903f45fe7fd5184caeed1bb0ff735e9, type: 3}
     IsFinalWave: 0
-  - WaveStartOn: 11
+  - WaveStartOn: 12
     IsBossWave: 0
     BossToSpawn: {fileID: 0}
     IsFinalWave: 1
@@ -2276,6 +2278,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688639019}
   m_CullTransparentMesh: 1
+--- !u!1 &1715067874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1715067876}
+  - component: {fileID: 1715067875}
+  m_Layer: 0
+  m_Name: Startmusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1715067875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715067874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e648d364c279f414fb4e1dd9b570858d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaySongOnStart
+  Song: {fileID: 8300000, guid: 7bc58b793ce77914180c3d4051712c9c, type: 3}
+--- !u!4 &1715067876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715067874}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1062.8317, y: 565.0398, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792911919
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,3 +3057,4 @@ SceneRoots:
   - {fileID: 1528606748}
   - {fileID: 304112345}
   - {fileID: 26683119}
+  - {fileID: 1715067876}

@@ -18,7 +18,7 @@ public class PressPlay : MonoBehaviour
     public void Press()
     {
         StartCoroutine("Fade");
-        MusicSoundManager.ChangeSongStatic(StageSong);
+        //MusicSoundManager.ChangeSongStatic(StageSong);
         //SceneManager.LoadScene("Game");
     }
 

@@ -13,14 +13,279 @@ MonoBehaviour:
   m_Name: Wave 10
   m_EditorClassIdentifier: Assembly-CSharp::DialogTree
   DialogList:
-  - Dialog: "Ugh\u2026 this is a mess. What kind of idiot tries to bait souls to
-      the rooftop? Hardly what I\u2019d consider the ideal dining spot. "
+  - Dialog: "\u2026"
     OnTheLeft: 1
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
     PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
-  - Dialog: "Of course, it has to be over my apartment, too\u2026 "
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026Just\u2026"
     OnTheLeft: 1
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: -327401834422631593, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'You want to run away. Why stop there? What comes after? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Do I\u2026 have to\u2026? "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'I want to hear you say it, Ran. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -2115282692821642965, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026It\u2019s just\u2026 When I think of leaving\u2026 What happens
+      after\u2026 "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026I always see you. I can\u2019t imagine doing anything but finding
+      you."
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026! "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "You\u2019re the reason I ever\u2026 thought about it. I\u2019d always
+      figured the world must be bigger than Hell, but meeting you is what made me
+      want to\u2026 see it.  "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Yakumo, I want to see what you\u2019ve seen. What you\u2019ve lived
+      your whole life seeing. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026But? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026But I\u2019m scared. Almost more humiliating than wanting to see
+      it with you is how afraid I am of reaching for it. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "You\u2019re afraid of those yakuza?"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Obviously. As if those three would ever take one of us weaklings waltzing
+      out of here lying down, whether we\u2019re their subjects or their rivals."
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: You really are adorable.
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "I thought you said you wouldn\u2019t make fun of me."
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: Oh, but how could I resist a bit of teasing? Especially when the answer
+      is right in front of you.
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026Wh\u2026 What do you mean?"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Do you really think I would approach you about this without a plan?  '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "The stage is set. I\u2019ve made my commotion."
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Unsealing this area, all the wretched beasts of this city may now bear
+      witness. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026As we seal our pact, Ran, and you are sworn shikigami to Yukari
+      Yakumo. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026!"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "So that\u2019s how\u2026 "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'What do you say? You become mine, and I yours. In front of an audience,
+      we have our witnesses to this vow. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "An audience that will also watch Gensokyo\u2019s sage spirit you away.
+      No one will be able to stop me. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "An audience that will also watch Gensokyo\u2019s sage spirit you away.
+      No one will be able to stop me. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026Me\u2026 "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'So? Will you run away with me, Ran Yakumo? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026I know that you have plenty of business in this place. You\u2019ll
+      have to come back. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "They won\u2019t let you get away with undermining their influence by
+      making off with one of their possessions.  "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "As if I couldn\u2019t handle them? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "You shouldn\u2019t have to. Not for my sake. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Oh, Ran\u2026 "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "After everything you\u2019ve done for me, that you keep doing for me,
+      I don\u2019t want\u2026 for you to pay the price for it.  "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "It\u2019s hardly so much as an inconvenience, darling. If it\u2019s
+      for you? I\u2019d do it in my sleep. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026It\u2019s the principle of it. That I\u2019m the one causing it.  "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "If we really\u2026 r-run away together. As you say\u2026 You have to
+      promise me something"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Yakumo\u2026 No\u2026 Yukari. If anyone is to aggress you for your aid
+      toward me\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Let me handle it.  '
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026All this was to help you, you know. Not the other way around. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Is the role of a shikigami not one of protecting its wielder?  '
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: Please. To honor this pact, let me prove myself worthy.
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "As if this whole time, you hadn\u2019t proven it to me tenfold\u2026  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "For you, I\u2019ll prove it again. Again, and again, and again, for
+      the rest of our lives if I have to. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026! "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Gods, how are you making me embarrassed? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "For what you\u2019ve put me through today, I think it\u2019s only fair,
+      Yukari. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -7178233924668838191, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}

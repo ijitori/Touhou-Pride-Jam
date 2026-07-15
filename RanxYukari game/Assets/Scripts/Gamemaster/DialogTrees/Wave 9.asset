@@ -13,14 +13,148 @@ MonoBehaviour:
   m_Name: Wave 9
   m_EditorClassIdentifier: Assembly-CSharp::DialogTree
   DialogList:
-  - Dialog: "Ugh\u2026 this is a mess. What kind of idiot tries to bait souls to
-      the rooftop? Hardly what I\u2019d consider the ideal dining spot. "
+  - Dialog: "\u2026Ran. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -2900560146370173281, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -1356191189, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'What?! '
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 4631728597453588502, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -1356191189, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 4631728597453588502, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 83037244, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026What do you think the sun feels like?"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 4631728597453588502, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 83037244, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026What do you think the sun feels like?"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 4631728597453588502, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "I\u2026 "
     OnTheLeft: 1
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
     PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
-  - Dialog: "Of course, it has to be over my apartment, too\u2026 "
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
     OnTheLeft: 1
     DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
-    PortaritLeft: {fileID: -327401834422631593, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
-    PortaritRight: {fileID: 2480814380858620165, guid: aac327979260b43418b577b7d1ebfa3e, type: 3}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026I don\u2019t know. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'What about fresh air? The scent of grass, of cherry blossoms? Can you
+      imagine it? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "I\u2019ve\u2026 thought about it. Once you\u2019d helped me get this
+      body, I sat in the field of spider lilies.  "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "But\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026The smog from here carries even that far. Is that right? "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "You can\u2019t even enjoy the scent of the flowers here. Do you know
+      what they\u2019re supposed to smell like?"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "After so many centuries here, I still have no frame of reference. It\u2019s
+      all I\u2019ve known. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: Then forget what you know. What do you want?
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "More than anything? I want to run away. Escape the yakuza, see Gensokyo,
+      and\u2026 "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "A-and\u2026 "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -3127955973574677526, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'And? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Y\u2026 you can\u2019t just\u2026 ask me\u2026 that. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 6652828153079176658, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'I most certainly can. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Why have you gone so quiet? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "It\u2019s\u2026 nothing. It\u2019s stupid. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Whatever it is, I promise not to make fun of you! '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "That\u2019s\u2026 not what I\u2019m afraid of\u2026 "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'What was that? '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'N-nothing! '
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: 3439391534509917400, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -210158839, guid: 058a9de5618692546851314d14ba38de, type: 3}

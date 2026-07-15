@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64f85ba82d8a50469ee4d29937573fa, type: 3}
+  m_Name: Wave 12 (Ending bridge)
+  m_EditorClassIdentifier: Assembly-CSharp::DialogTree
+  DialogList:
+  - Dialog: ...
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 83037244, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: ...Yukari?
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026Perfect. Gods, Ran, you\u2019re perfect."
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "D-does that mean I did well\u2026? "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "H\u2026 haha\u2026 hahaha! "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "You\u2019ve sold yourself so short for so long, yet above a city of
+      everyone who has ever held you down\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026You ask if you did well? Ran, no one here could have done better.
+      Many of them never will. Do you understand that?"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Far from it. Today, just now, you have shown everyone below that they
+      cannot stop you.  '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "I\u2019m finally\u2026 getting out of here."
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "Not as one of their peons, but\u2026 "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'As a Yakumo.  '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026"
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026And I\u2019d like to remain as one. For\u2026 as long as you\u2019ll
+      have me."
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "You know I wouldn\u2019t have it any other way. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -5981741730765460837, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: -976326832, guid: 058a9de5618692546851314d14ba38de, type: 3}

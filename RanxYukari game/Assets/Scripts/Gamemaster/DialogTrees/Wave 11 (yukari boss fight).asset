@@ -12,4 +12,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d64f85ba82d8a50469ee4d29937573fa, type: 3}
   m_Name: Wave 11 (yukari boss fight)
   m_EditorClassIdentifier: Assembly-CSharp::DialogTree
-  DialogList: []
+  DialogList:
+  - Dialog: "\u2026My enemies aren\u2019t few, you know.  "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 94737884, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "They extend far beyond here. Gensokyo, the moon, the realm of dreams,
+      the judge of this afterlife\u2026 Perhaps even Heaven, if I haven\u2019t been
+      careful."
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 94737884, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026And, no offense, but you probably haven\u2019t been. "
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Rude. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: My point is, anyone that wants a reason to fight me will find one. All
+      of them are infinitely more capable than the beasts here, perhaps save only
+      for their bosses.
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: Would you fight alongside me, even then?
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "I\u2026 I can\u2019t lie and say that I know I\u2019d win."
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "But I don\u2019t care. I\u2019ve made up my mind, Yukari. I\u2019d still
+      try, if it\u2019s for you."
+    OnTheLeft: 1
+    DialogCharacterTheme: {fileID: 11400000, guid: 60c18fb5a05c5ab46b53ec22e06c5fba, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026I could hear you say that all day\u2026"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026Then how about this?"
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "We\u2019ve set the stage. The metropolis will be our witness to our
+      pact, and our subsequent escape. "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "You said you\u2019ll prove yourself? Fine. Then, while we have them
+      here\u2026 "
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5576577275052418807, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: "\u2026Let\u2019s give them a show."
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
+  - Dialog: 'Your final act in Hell, and your first opponent from above the grave. '
+    OnTheLeft: 0
+    DialogCharacterTheme: {fileID: 11400000, guid: 0d020e2bce96cbd4c9d6cef78b04f046, type: 2}
+    PortaritLeft: {fileID: -1059647706405520586, guid: b97f53db3650d2a479fac9e4f6ccea96, type: 3}
+    PortaritRight: {fileID: 5522366917127876498, guid: 058a9de5618692546851314d14ba38de, type: 3}
